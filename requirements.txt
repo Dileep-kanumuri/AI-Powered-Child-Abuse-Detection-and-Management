@@ -7,3 +7,4 @@ datasets==2.11.0
 plotly==5.16.0
 cmdstanpy==1.0.4
 requests==2.31.0
+prophet==1.1.3
