@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # **AI-Powered Child Abuse Detection and Management**
 ### **By SAI Pro Systems LLC**
 
@@ -67,6 +67,7 @@ Child_Abuse/
 ├── bert_abuse_model_v2/           # Pre-trained BERT model files
 │   ├── config.json
 │   ├── pytorch_model.bin
+|   ├── model.safetensors
 │   ├── tokenizer_config.json
 │   ├── vocab.txt
 ├── README.md                      # Project documentation
@@ -74,4 +75,4 @@ Child_Abuse/
 =======
 # AI-Powered-Child-Abuse-Detection-and-Management
 AI-Powered Child Abuse Detection and Management" is a cutting-edge application developed by SAI Pro Systems LLC that leverages machine learning and natural language processing (NLP) to analyze, predict, and manage child abuse cases.
->>>>>>> f1492243870d002de2f5a125ac80429b86ad8aba
+
