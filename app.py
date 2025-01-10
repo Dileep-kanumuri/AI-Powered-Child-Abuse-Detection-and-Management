@@ -10,15 +10,7 @@ import os
 import requests 
 import spacy
 
-# Download and load the SpaCy model if not already installed
-try:
-    # Try loading the model
-    nlp = spacy.load("en_core_web_sm")
-except OSError:
-    # If the model is not installed, download and load it
-    from spacy.cli import download
-    download("en_core_web_sm")
-    nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_sm")
 
 
 # --------------------------------------------------------
