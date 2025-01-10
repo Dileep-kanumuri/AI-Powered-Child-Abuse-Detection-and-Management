@@ -1,0 +1,1001 @@
+Child ID,Age,Gender,Region,Abuse Type,Severity,Reported By,Support Provided,Case Outcome,Case Description
+1,8.0,Female,Urban,Neglect,Medium,Parent,No,Ongoing,"Repeated absence from school, reported malnutrition."
+2,5.0,Female,Suburban,Physical,High,Teacher,No,Resolved,Child reported with bruises and scars. Typo heree.
+3,1.0,Male,Urban,Neglect,Medium,Teacher,Yes,Dismissed,Child often appears hungry and unwashed. Unclear details.
+4,15.0,Male,Suburban,Emotional,High,Other,No,Ongoing,Child shows signs of withdrawal and fear.
+5,6.0,Female,Rural,Physical,Medium,Parent,Yes,Dismissed,Seen limping and reluctant to explain.
+6,12.0,Other,Urban,Physical,Medium,Neighbor,No,Resolved,Seen limping and reluctant to explain. Unconfirmed report.
+7,8.0,Other,Suburban,Sexual,Medium,Other,Yes,Ongoing,"Unusual behavior, child refuses to discuss."
+8,13.0,Other,Suburban,Sexual,High,Parent,Yes,Ongoing,"Unusual behavior, child refuses to discuss. Unclear details."
+9,,Other,Rural,Neglect,Low,Parent,Yes,Dismissed,Child often appears hungry and unwashed.
+10,11.0,Male,Urban,Sexual,High,Teacher,Yes,Ongoing,"Signs of trauma, reported by neighbor. Unclear details."
+11,1.0,Female,Urban,Sexual,Low,Other,Yes,Resolved,"Signs of trauma, reported by neighbor. Unconfirmed report."
+12,8.0,Other,Urban,Sexual,Medium,Parent,Yes,Resolved,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+13,5.0,Male,Rural,Physical,High,Parent,Yes,Resolved,Seen limping and reluctant to explain. Typo heree.
+14,17.0,Other,Urban,Physical,Low,Other,Yes,Dismissed,Child reported with bruises and scars. Unclear details.
+15,8.0,Female,Rural,Physical,Low,Neighbor,Yes,Ongoing,Seen limping and reluctant to explain. Unconfirmed report.
+16,10.0,Male,Rural,Sexual,Medium,Other,Yes,Ongoing,Inappropriate comments made by caregiver. Typo heree.
+17,2.0,Female,Rural,Physical,High,Other,Yes,Ongoing,Child reported with bruises and scars. Unclear details.
+18,9.0,Female,Suburban,Sexual,Low,Neighbor,Yes,Resolved,Inappropriate comments made by caregiver.
+19,3.0,Male,Urban,Physical,High,Other,Yes,Ongoing,Child reported with bruises and scars. Unconfirmed report.
+20,7.0,Male,Urban,Physical,Low,Parent,No,Resolved,Child reported with bruises and scars. Typo heree.
+21,15.0,Male,Rural,Emotional,High,Other,No,Ongoing,Reports of constant yelling and verbal abuse. Typo heree.
+22,3.0,Male,Rural,Neglect,High,Neighbor,Yes,Resolved,Child often appears hungry and unwashed. Unconfirmed report.
+23,14.0,Male,Urban,Sexual,Medium,Police,No,Ongoing,"Signs of trauma, reported by neighbor."
+24,2.0,Male,Rural,Emotional,Medium,Other,No,Dismissed,Reports of constant yelling and verbal abuse.
+25,14.0,Male,Urban,Physical,Medium,Teacher,No,Dismissed,Seen limping and reluctant to explain. Typo heree.
+26,11.0,Other,Suburban,Sexual,Medium,Parent,Yes,Resolved,"Signs of trauma, reported by neighbor. Typo heree."
+27,16.0,Female,Rural,Physical,Low,Parent,Yes,Resolved,Seen limping and reluctant to explain. Unclear details.
+28,8.0,Male,Urban,Neglect,Low,Teacher,Yes,Ongoing,"Repeated absence from school, reported malnutrition."
+29,7.0,Other,Rural,Emotional,Low,Teacher,Yes,Ongoing,Child shows signs of withdrawal and fear. Unclear details.
+30,11.0,Other,Urban,Neglect,Medium,Other,Yes,Dismissed,"No supervision at home, child wandering streets."
+31,3.0,Other,Urban,Emotional,Low,Teacher,Yes,Ongoing,Child shows signs of withdrawal and fear.
+32,17.0,Female,Rural,Physical,Medium,Police,No,Resolved,"Frequent injuries, parents claim accidental. Typo heree."
+33,14.0,Male,Suburban,Neglect,High,Neighbor,No,Resolved,"No supervision at home, child wandering streets. Typo heree."
+34,6.0,Other,Urban,Neglect,Medium,Teacher,Yes,Resolved,Child often appears hungry and unwashed. Typo heree.
+35,8.0,Female,Urban,Physical,Medium,Teacher,Yes,Resolved,"Frequent injuries, parents claim accidental. Unclear details."
+36,5.0,Female,Urban,Neglect,Medium,Police,Yes,Resolved,"Repeated absence from school, reported malnutrition. Typo heree."
+37,8.0,Female,Suburban,Sexual,High,Parent,No,Dismissed,"Signs of trauma, reported by neighbor."
+38,2.0,Other,Suburban,Emotional,High,Parent,Yes,Dismissed,Low self-esteem observed by teacher. Unclear details.
+39,15.0,Male,Rural,Emotional,High,Other,Yes,Resolved,Low self-esteem observed by teacher. Unclear details.
+40,12.0,Other,Suburban,Emotional,High,Police,Yes,Ongoing,Child shows signs of withdrawal and fear. Unconfirmed report.
+41,17.0,Other,Rural,Sexual,Low,Neighbor,Yes,Resolved,Inappropriate comments made by caregiver. Typo heree.
+42,1.0,Male,Rural,Emotional,High,Neighbor,Yes,Dismissed,Low self-esteem observed by teacher. Unclear details.
+43,15.0,Male,Suburban,Physical,Medium,Police,Yes,Resolved,Seen limping and reluctant to explain. Typo heree.
+44,14.0,Male,Rural,Neglect,Low,Neighbor,No,Dismissed,Child often appears hungry and unwashed. Unclear details.
+45,16.0,Female,Suburban,Sexual,High,Parent,No,Dismissed,"Unusual behavior, child refuses to discuss. Typo heree."
+46,9.0,Male,Rural,Emotional,Low,Neighbor,No,Resolved,Reports of constant yelling and verbal abuse. Typo heree.
+47,1.0,Other,Suburban,Physical,Medium,Neighbor,No,Resolved,Child reported with bruises and scars. Unclear details.
+48,17.0,Male,Suburban,Neglect,Low,Police,Yes,Ongoing,"Repeated absence from school, reported malnutrition. Typo heree."
+49,13.0,Other,Rural,Neglect,Medium,Police,Yes,Dismissed,Child often appears hungry and unwashed. Unconfirmed report.
+50,5.0,Female,Urban,Sexual,Medium,Neighbor,No,Ongoing,Inappropriate comments made by caregiver. Unconfirmed report.
+51,10.0,Other,Rural,Sexual,Medium,Teacher,No,Resolved,"Unusual behavior, child refuses to discuss. Typo heree."
+52,6.0,Other,Suburban,Unknown,Medium,Police,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Unclear details."
+53,13.0,Male,Urban,Physical,Medium,Other,Yes,Ongoing,Seen limping and reluctant to explain. Typo heree.
+54,1.0,Male,Rural,Physical,High,Other,Yes,Ongoing,Seen limping and reluctant to explain. Unconfirmed report.
+55,15.0,Other,Rural,Sexual,Low,Parent,Yes,Ongoing,"Signs of trauma, reported by neighbor. Unconfirmed report."
+56,14.0,Male,Rural,Emotional,Medium,Neighbor,Yes,Resolved,Reports of constant yelling and verbal abuse. Unclear details.
+57,8.0,Female,Urban,Neglect,High,Teacher,Yes,Resolved,Child often appears hungry and unwashed. Unconfirmed report.
+58,10.0,Female,Suburban,Neglect,High,Parent,Yes,Resolved,Child often appears hungry and unwashed.
+59,9.0,Male,Rural,Physical,Medium,Neighbor,Yes,Dismissed,Child reported with bruises and scars. Unclear details.
+60,17.0,Female,Rural,Neglect,Medium,Police,No,Resolved,"Repeated absence from school, reported malnutrition. Unclear details."
+61,9.0,Male,Rural,Emotional,High,Other,Yes,Dismissed,Low self-esteem observed by teacher. Unconfirmed report.
+62,3.0,Other,Rural,Neglect,High,Teacher,Yes,Ongoing,"Repeated absence from school, reported malnutrition."
+63,11.0,Other,Rural,Physical,Medium,Other,Yes,Ongoing,"Frequent injuries, parents claim accidental. Unconfirmed report."
+64,12.0,Female,Suburban,Physical,Low,Police,No,Resolved,Seen limping and reluctant to explain. Unconfirmed report.
+65,10.0,Male,Suburban,Emotional,Low,Neighbor,Yes,Ongoing,Low self-esteem observed by teacher. Typo heree.
+66,17.0,Male,Rural,Emotional,Low,Police,No,Resolved,Low self-esteem observed by teacher.
+67,17.0,Female,Urban,Neglect,Medium,Police,Yes,Dismissed,"Repeated absence from school, reported malnutrition."
+68,11.0,Other,Suburban,Neglect,Low,Other,No,Ongoing,"Repeated absence from school, reported malnutrition. Typo heree."
+69,4.0,Female,Urban,Physical,Medium,Teacher,No,Resolved,Seen limping and reluctant to explain. Typo heree.
+70,7.0,Other,Suburban,Emotional,Medium,Police,Yes,Ongoing,Child shows signs of withdrawal and fear. Typo heree.
+71,14.0,Male,Rural,Emotional,Low,Other,Yes,Ongoing,Reports of constant yelling and verbal abuse. Unclear details.
+72,7.0,Other,Suburban,Emotional,High,Teacher,Yes,Resolved,Reports of constant yelling and verbal abuse.
+73,8.0,Female,Rural,Neglect,Medium,Neighbor,Yes,Ongoing,"Repeated absence from school, reported malnutrition. Typo heree."
+74,1.0,Male,Suburban,Emotional,Low,Neighbor,Yes,Ongoing,Low self-esteem observed by teacher. Unclear details.
+75,4.0,Female,Rural,Physical,High,Parent,Yes,Ongoing,Seen limping and reluctant to explain.
+76,12.0,Female,Rural,Physical,Low,Unknown,Yes,Ongoing,Seen limping and reluctant to explain. Typo heree.
+77,3.0,Other,Rural,Neglect,Medium,Teacher,Yes,Dismissed,"Repeated absence from school, reported malnutrition. Unclear details."
+78,13.0,Female,Rural,Sexual,Medium,Police,Yes,Ongoing,"Unusual behavior, child refuses to discuss. Typo heree."
+79,6.0,Other,Urban,Neglect,Medium,Neighbor,Yes,Ongoing,Child often appears hungry and unwashed.
+80,11.0,Male,Rural,Sexual,High,Teacher,Yes,Resolved,"Signs of trauma, reported by neighbor. Typo heree."
+81,4.0,Other,Urban,Emotional,Medium,Other,Yes,Dismissed,Reports of constant yelling and verbal abuse.
+82,16.0,Male,Urban,Neglect,Medium,Parent,Yes,Resolved,Child often appears hungry and unwashed. Typo heree.
+83,7.0,Other,Rural,Physical,Low,Neighbor,Yes,Resolved,"Frequent injuries, parents claim accidental. Unclear details."
+84,11.0,Female,Urban,Emotional,Low,Teacher,No,Resolved,Child shows signs of withdrawal and fear. Unclear details.
+85,1.0,Other,Suburban,Physical,High,Teacher,Yes,Dismissed,Seen limping and reluctant to explain.
+86,7.0,Other,Rural,Emotional,Medium,Teacher,Yes,Resolved,Child shows signs of withdrawal and fear. Unconfirmed report.
+87,12.0,Male,Urban,Neglect,Medium,Other,Yes,Resolved,Child often appears hungry and unwashed. Unclear details.
+88,7.0,Female,Rural,Sexual,Medium,Other,No,Resolved,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+89,7.0,Other,Rural,Emotional,Medium,Other,No,Ongoing,Low self-esteem observed by teacher. Unclear details.
+90,10.0,Female,Rural,Sexual,Low,Police,No,Resolved,Inappropriate comments made by caregiver. Unconfirmed report.
+91,16.0,Other,Urban,Emotional,Medium,Teacher,Yes,Dismissed,Child shows signs of withdrawal and fear. Unclear details.
+92,8.0,Other,Suburban,Physical,Medium,Neighbor,Yes,Dismissed,Seen limping and reluctant to explain. Typo heree.
+93,9.0,Female,Suburban,Physical,Low,Other,Yes,Ongoing,"Frequent injuries, parents claim accidental. Typo heree."
+94,9.0,Other,Urban,Emotional,Low,Other,Yes,Dismissed,Reports of constant yelling and verbal abuse. Unconfirmed report.
+95,2.0,Female,Rural,Sexual,Low,Teacher,No,Dismissed,"Unusual behavior, child refuses to discuss. Unclear details."
+96,13.0,Other,Urban,Neglect,Medium,Other,Yes,Ongoing,Child often appears hungry and unwashed.
+97,13.0,Male,Urban,Neglect,High,Police,No,Resolved,"No supervision at home, child wandering streets."
+98,4.0,Female,Urban,Physical,Low,Police,Yes,Ongoing,Seen limping and reluctant to explain. Unclear details.
+99,12.0,Other,Rural,Neglect,Low,Other,No,Resolved,"Repeated absence from school, reported malnutrition. Unclear details."
+100,17.0,Other,Urban,Physical,Medium,Teacher,Yes,Resolved,Child reported with bruises and scars.
+101,2.0,Male,Rural,Neglect,Medium,Teacher,Yes,Dismissed,"Repeated absence from school, reported malnutrition."
+102,13.0,Female,Urban,Emotional,Medium,Teacher,Yes,Ongoing,Child shows signs of withdrawal and fear.
+103,15.0,Other,Suburban,Physical,Medium,Parent,Yes,Dismissed,Child reported with bruises and scars. Typo heree.
+104,8.0,Male,Urban,Physical,Medium,Other,Yes,Dismissed,Child reported with bruises and scars. Unclear details.
+105,15.0,Other,Urban,Emotional,Medium,Teacher,No,Resolved,Reports of constant yelling and verbal abuse. Unconfirmed report.
+106,1.0,Female,Suburban,Physical,High,Police,Yes,Dismissed,Child reported with bruises and scars. Unclear details.
+107,10.0,Other,Rural,Neglect,High,Neighbor,Yes,Ongoing,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+108,12.0,Other,Rural,Neglect,Low,Neighbor,Yes,Dismissed,Child often appears hungry and unwashed. Unconfirmed report.
+109,5.0,Other,Urban,Physical,Low,Teacher,Yes,Dismissed,"Frequent injuries, parents claim accidental. Unclear details."
+110,9.0,Other,Suburban,Neglect,Low,Neighbor,No,Resolved,Child often appears hungry and unwashed.
+111,8.0,Male,Rural,Sexual,Medium,Neighbor,No,Ongoing,"Signs of trauma, reported by neighbor. Unconfirmed report."
+112,16.0,Male,Urban,Physical,High,Parent,No,Dismissed,"Frequent injuries, parents claim accidental. Unconfirmed report."
+113,14.0,Female,Suburban,Emotional,Medium,Police,No,Resolved,Reports of constant yelling and verbal abuse. Unconfirmed report.
+114,13.0,Male,Rural,Sexual,Low,Police,No,Dismissed,"Signs of trauma, reported by neighbor."
+115,13.0,Male,Rural,Physical,Medium,Parent,Yes,Ongoing,Seen limping and reluctant to explain.
+116,5.0,Female,Suburban,Emotional,Medium,Parent,No,Dismissed,Child shows signs of withdrawal and fear. Unconfirmed report.
+117,16.0,Male,Suburban,Neglect,Low,Neighbor,Yes,Dismissed,"Repeated absence from school, reported malnutrition. Typo heree."
+118,11.0,Male,Suburban,Emotional,Medium,Other,Yes,Resolved,Child shows signs of withdrawal and fear. Unclear details.
+119,5.0,Female,Suburban,Sexual,Medium,Neighbor,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Unclear details."
+120,13.0,Female,Urban,Neglect,Medium,Parent,No,Resolved,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+121,11.0,Female,Suburban,Physical,Low,Police,No,Ongoing,Child reported with bruises and scars. Unconfirmed report.
+122,3.0,Unknow,Rural,Neglect,Low,Neighbor,Yes,Dismissed,Child often appears hungry and unwashed. Typo heree.
+123,15.0,Other,Rural,Physical,Medium,Other,No,Ongoing,"Frequent injuries, parents claim accidental. Unclear details."
+124,7.0,Female,Urban,Physical,Low,Neighbor,No,Ongoing,Child reported with bruises and scars. Unconfirmed report.
+125,7.0,Female,Rural,Emotional,Medium,Teacher,Yes,Dismissed,Low self-esteem observed by teacher.
+126,6.0,Female,Rural,Emotional,Medium,Neighbor,Yes,Resolved,Child shows signs of withdrawal and fear.
+127,3.0,Other,Suburban,Emotional,Medium,Parent,No,Ongoing,Child shows signs of withdrawal and fear. Unclear details.
+128,13.0,Other,Rural,Sexual,High,Police,Yes,Ongoing,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+129,7.0,Male,Urban,Sexual,Medium,Police,Yes,Dismissed,Inappropriate comments made by caregiver. Unconfirmed report.
+130,5.0,Male,Suburban,Emotional,Low,Parent,Yes,Dismissed,Child shows signs of withdrawal and fear. Unconfirmed report.
+131,8.0,Female,Suburban,Sexual,Medium,Teacher,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Unclear details."
+132,17.0,Other,Urban,Neglect,Medium,Parent,No,Dismissed,"No supervision at home, child wandering streets."
+133,1.0,Other,Suburban,Neglect,Medium,Neighbor,Yes,Dismissed,"No supervision at home, child wandering streets. Typo heree."
+134,14.0,Other,Suburban,Sexual,Low,Parent,No,Dismissed,Inappropriate comments made by caregiver. Typo heree.
+135,17.0,Female,Urban,Sexual,High,Parent,No,Resolved,Inappropriate comments made by caregiver. Unconfirmed report.
+136,10.0,Male,Suburban,Neglect,Medium,Teacher,No,Ongoing,Child often appears hungry and unwashed. Unclear details.
+137,12.0,Female,Urban,Physical,Low,Neighbor,Yes,Resolved,"Frequent injuries, parents claim accidental. Unclear details."
+138,16.0,Male,Urban,Unknown,Low,Other,Yes,Resolved,Child often appears hungry and unwashed.
+139,14.0,Male,Rural,Neglect,Low,Other,Yes,Dismissed,"Repeated absence from school, reported malnutrition. Typo heree."
+140,16.0,Female,Rural,Sexual,High,Police,Yes,Ongoing,"Unusual behavior, child refuses to discuss."
+141,8.0,Male,Suburban,Neglect,Low,Parent,No,Resolved,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+142,10.0,Male,Suburban,Sexual,Low,Police,Yes,Dismissed,"Signs of trauma, reported by neighbor. Unclear details."
+143,17.0,Other,Urban,Sexual,High,Teacher,Yes,Dismissed,"Unusual behavior, child refuses to discuss."
+144,16.0,Male,Suburban,Emotional,Medium,Other,Yes,Ongoing,Child shows signs of withdrawal and fear.
+145,17.0,Female,Urban,Neglect,Low,Parent,No,Resolved,"Repeated absence from school, reported malnutrition."
+146,16.0,Female,Urban,Physical,Low,Teacher,No,Resolved,Seen limping and reluctant to explain. Unclear details.
+147,8.0,Male,Suburban,Emotional,Low,Teacher,Yes,Resolved,Reports of constant yelling and verbal abuse.
+148,6.0,Other,Urban,Sexual,Low,Parent,No,Dismissed,"Signs of trauma, reported by neighbor. Unclear details."
+149,6.0,Other,Rural,Sexual,Medium,Teacher,Yes,Ongoing,"Signs of trauma, reported by neighbor."
+150,9.0,Male,Suburban,Physical,Low,Parent,Yes,Ongoing,Seen limping and reluctant to explain.
+151,4.0,Male,Rural,Sexual,Low,Parent,No,Resolved,Inappropriate comments made by caregiver. Typo heree.
+152,12.0,Female,Suburban,Neglect,Medium,Neighbor,Yes,Dismissed,"No supervision at home, child wandering streets. Unclear details."
+153,12.0,Male,Urban,Emotional,Medium,Police,No,Resolved,Low self-esteem observed by teacher. Typo heree.
+154,17.0,Other,Suburban,Sexual,Medium,Teacher,Yes,Ongoing,"Unusual behavior, child refuses to discuss. Typo heree."
+155,15.0,Male,Rural,Sexual,Medium,Teacher,Yes,Dismissed,Inappropriate comments made by caregiver. Unclear details.
+156,9.0,Female,Urban,Physical,Medium,Neighbor,No,Resolved,Seen limping and reluctant to explain. Typo heree.
+157,7.0,Female,Suburban,Neglect,Medium,Neighbor,Yes,Resolved,"No supervision at home, child wandering streets. Typo heree."
+158,10.0,Female,Suburban,Sexual,Medium,Neighbor,No,Dismissed,"Unusual behavior, child refuses to discuss."
+159,16.0,Female,Suburban,Physical,Medium,Other,No,Ongoing,"Frequent injuries, parents claim accidental."
+160,12.0,Female,Rural,Sexual,High,Other,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Unclear details."
+161,7.0,Male,Rural,Physical,Low,Other,Yes,Resolved,Seen limping and reluctant to explain. Typo heree.
+162,15.0,Male,Suburban,Physical,Medium,Parent,Yes,Resolved,Child reported with bruises and scars. Typo heree.
+163,6.0,Male,Urban,Neglect,Low,Teacher,Yes,Resolved,Child often appears hungry and unwashed. Unclear details.
+164,12.0,Male,Urban,Sexual,Medium,Police,Yes,Resolved,Inappropriate comments made by caregiver. Typo heree.
+165,11.0,Female,Rural,Neglect,Medium,Parent,Yes,Ongoing,Child often appears hungry and unwashed. Unconfirmed report.
+166,3.0,Other,Urban,Physical,High,Teacher,Yes,Ongoing,Seen limping and reluctant to explain. Typo heree.
+167,2.0,Male,Rural,Emotional,Low,Teacher,Yes,Resolved,Low self-esteem observed by teacher.
+168,6.0,Other,Suburban,Sexual,Medium,Neighbor,No,Ongoing,"Signs of trauma, reported by neighbor. Typo heree."
+169,5.0,Male,Rural,Emotional,Medium,Neighbor,No,Ongoing,Low self-esteem observed by teacher.
+170,16.0,Male,Rural,Sexual,Medium,Parent,No,Ongoing,"Unusual behavior, child refuses to discuss. Typo heree."
+171,8.0,Other,Suburban,Neglect,Medium,Neighbor,Yes,Resolved,Child often appears hungry and unwashed.
+172,11.0,Female,Urban,Neglect,Medium,Teacher,No,Dismissed,"Repeated absence from school, reported malnutrition. Unclear details."
+173,10.0,Male,Rural,Neglect,Medium,Neighbor,Yes,Dismissed,"No supervision at home, child wandering streets. Typo heree."
+174,12.0,Male,Rural,Neglect,Medium,Other,No,Dismissed,"Repeated absence from school, reported malnutrition. Unclear details."
+175,6.0,Male,Suburban,Neglect,Medium,Neighbor,No,Resolved,"Repeated absence from school, reported malnutrition. Typo heree."
+176,5.0,Other,Urban,Emotional,Low,Teacher,Yes,Ongoing,Child shows signs of withdrawal and fear. Typo heree.
+177,9.0,Female,Rural,Neglect,High,Parent,Yes,Ongoing,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+178,16.0,Other,Suburban,Physical,Medium,Police,No,Resolved,"Frequent injuries, parents claim accidental."
+179,14.0,Other,Rural,Physical,High,Neighbor,No,Resolved,Child reported with bruises and scars. Unconfirmed report.
+180,8.0,Female,Suburban,Emotional,Low,Teacher,No,Dismissed,Reports of constant yelling and verbal abuse.
+181,14.0,Other,Urban,Sexual,High,Police,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Typo heree."
+182,7.0,Female,Urban,Physical,High,Police,Yes,Resolved,Child reported with bruises and scars. Typo heree.
+183,5.0,Male,Urban,Sexual,Medium,Other,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+184,2.0,Female,Urban,Emotional,Medium,Police,No,Ongoing,Low self-esteem observed by teacher. Unconfirmed report.
+185,11.0,Male,Rural,Sexual,Medium,Teacher,Yes,Resolved,"Signs of trauma, reported by neighbor."
+186,8.0,Other,Rural,Sexual,High,Teacher,No,Resolved,"Unusual behavior, child refuses to discuss."
+187,1.0,Other,Urban,Sexual,Medium,Neighbor,Yes,Ongoing,"Signs of trauma, reported by neighbor. Unclear details."
+188,12.0,Male,Urban,Sexual,Low,Neighbor,Yes,Ongoing,"Signs of trauma, reported by neighbor."
+189,2.0,Other,Urban,Emotional,Medium,Neighbor,Yes,Ongoing,Reports of constant yelling and verbal abuse. Unclear details.
+190,7.0,Female,Rural,Physical,High,Police,No,Dismissed,"Frequent injuries, parents claim accidental. Unclear details."
+191,17.0,Male,Urban,Neglect,High,Police,Yes,Resolved,Child often appears hungry and unwashed. Typo heree.
+192,14.0,Other,Urban,Sexual,High,Other,Yes,Dismissed,Inappropriate comments made by caregiver.
+193,7.0,Male,Urban,Physical,Medium,Neighbor,Yes,Ongoing,"Frequent injuries, parents claim accidental. Unclear details."
+194,3.0,Female,Suburban,Physical,Low,Parent,Yes,Dismissed,Seen limping and reluctant to explain. Unclear details.
+195,6.0,Female,Urban,Emotional,Low,Other,Yes,Ongoing,Low self-esteem observed by teacher.
+196,2.0,Other,Suburban,Physical,Low,Parent,No,Dismissed,"Frequent injuries, parents claim accidental. Unconfirmed report."
+197,17.0,Female,Suburban,Emotional,Low,Police,Yes,Dismissed,Low self-esteem observed by teacher. Unclear details.
+198,12.0,Male,Urban,Sexual,Medium,Other,Yes,Ongoing,"Unusual behavior, child refuses to discuss. Unclear details."
+199,12.0,Female,Suburban,Sexual,Low,Other,No,Dismissed,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+200,17.0,Male,Urban,Neglect,Medium,Teacher,No,Resolved,Child often appears hungry and unwashed. Unclear details.
+201,10.0,Male,Rural,Neglect,High,Police,Yes,Dismissed,"Repeated absence from school, reported malnutrition. Typo heree."
+202,3.0,Female,Rural,Neglect,Medium,Police,Yes,Dismissed,"No supervision at home, child wandering streets. Unclear details."
+203,13.0,Other,Rural,Physical,High,Other,No,Resolved,"Frequent injuries, parents claim accidental. Unclear details."
+204,12.0,Female,Rural,Sexual,Medium,Police,No,Ongoing,"Signs of trauma, reported by neighbor."
+205,17.0,Male,Suburban,Emotional,Low,Other,No,Resolved,Reports of constant yelling and verbal abuse.
+206,4.0,Male,Urban,Neglect,Medium,Teacher,Yes,Dismissed,"No supervision at home, child wandering streets. Unclear details."
+207,10.0,Female,Urban,Emotional,Low,Other,Yes,Ongoing,Child shows signs of withdrawal and fear. Unconfirmed report.
+208,11.0,Other,Urban,Emotional,Medium,Police,No,Dismissed,Reports of constant yelling and verbal abuse. Typo heree.
+209,6.0,Other,Rural,Neglect,Medium,Police,Yes,Dismissed,Child often appears hungry and unwashed. Unclear details.
+210,6.0,Male,Rural,Sexual,Low,Other,Yes,Resolved,"Unusual behavior, child refuses to discuss. Unclear details."
+211,9.0,Male,Urban,Neglect,Low,Other,No,Resolved,"No supervision at home, child wandering streets. Typo heree."
+212,15.0,Other,Rural,Emotional,Medium,Other,Yes,Ongoing,Reports of constant yelling and verbal abuse.
+213,2.0,Female,Urban,Neglect,High,Neighbor,Yes,Ongoing,"No supervision at home, child wandering streets. Typo heree."
+214,4.0,Male,Urban,Emotional,Medium,Police,Yes,Ongoing,Low self-esteem observed by teacher. Unconfirmed report.
+215,5.0,Male,Urban,Emotional,Medium,Police,Yes,Dismissed,Low self-esteem observed by teacher. Typo heree.
+216,17.0,Other,Urban,Neglect,Low,Neighbor,Yes,Resolved,Child often appears hungry and unwashed.
+217,8.0,Female,Urban,Physical,Medium,Other,No,Resolved,"Frequent injuries, parents claim accidental. Unclear details."
+218,8.0,Other,Urban,Neglect,Medium,Teacher,Yes,Resolved,"Repeated absence from school, reported malnutrition. Typo heree."
+219,12.0,Female,Urban,Physical,Medium,Other,Yes,Ongoing,Child reported with bruises and scars.
+220,8.0,Female,Rural,Emotional,High,Other,No,Resolved,Low self-esteem observed by teacher. Unconfirmed report.
+221,3.0,Female,Urban,Emotional,Medium,Neighbor,Yes,Resolved,Reports of constant yelling and verbal abuse. Typo heree.
+222,15.0,Male,Urban,Physical,High,Police,Yes,Resolved,"Frequent injuries, parents claim accidental."
+223,6.0,Other,Rural,Emotional,High,Other,No,Ongoing,Reports of constant yelling and verbal abuse. Unclear details.
+224,16.0,Other,Rural,Physical,Low,Police,No,Resolved,"Frequent injuries, parents claim accidental."
+225,8.0,Female,Rural,Physical,Medium,Parent,Yes,Ongoing,Seen limping and reluctant to explain. Unconfirmed report.
+226,16.0,Male,Urban,Emotional,High,Police,No,Resolved,Child shows signs of withdrawal and fear. Unclear details.
+227,16.0,Male,Suburban,Sexual,Low,Teacher,Yes,Resolved,Inappropriate comments made by caregiver. Unconfirmed report.
+228,11.0,Other,Suburban,Physical,Medium,Teacher,No,Resolved,Child reported with bruises and scars. Typo heree.
+229,7.0,Male,Rural,Neglect,High,Other,Yes,Ongoing,"Repeated absence from school, reported malnutrition. Typo heree."
+230,17.0,Male,Suburban,Neglect,Medium,Police,No,Ongoing,"Repeated absence from school, reported malnutrition."
+231,17.0,Female,Rural,Emotional,Low,Other,Yes,Resolved,Low self-esteem observed by teacher. Typo heree.
+232,12.0,Male,Urban,Sexual,Medium,Neighbor,Yes,Dismissed,"Signs of trauma, reported by neighbor. Typo heree."
+233,13.0,Female,Suburban,Emotional,Low,Teacher,Yes,Ongoing,Low self-esteem observed by teacher. Unconfirmed report.
+234,10.0,Other,Urban,Sexual,Medium,Other,Yes,Ongoing,Inappropriate comments made by caregiver. Unconfirmed report.
+235,7.0,Male,Suburban,Physical,Low,Neighbor,No,Resolved,Seen limping and reluctant to explain. Typo heree.
+236,14.0,Other,Urban,Physical,Medium,Other,Yes,Dismissed,Seen limping and reluctant to explain. Unclear details.
+237,1.0,Other,Suburban,Physical,Medium,Police,Yes,Resolved,Child reported with bruises and scars. Unconfirmed report.
+238,17.0,Male,Urban,Physical,Medium,Police,Yes,Ongoing,Seen limping and reluctant to explain. Unconfirmed report.
+239,4.0,Male,Urban,Neglect,Medium,Police,Yes,Ongoing,"Repeated absence from school, reported malnutrition. Unclear details."
+240,5.0,Other,Suburban,Neglect,Medium,Police,No,Resolved,"Repeated absence from school, reported malnutrition. Typo heree."
+241,7.0,Male,Urban,Emotional,Medium,Parent,No,Resolved,Reports of constant yelling and verbal abuse.
+242,10.0,Female,Urban,Sexual,Low,Neighbor,Yes,Dismissed,Inappropriate comments made by caregiver. Typo heree.
+243,17.0,Female,Urban,Physical,Medium,Neighbor,No,Dismissed,Child reported with bruises and scars. Unconfirmed report.
+244,7.0,Male,Suburban,Physical,Low,Police,No,Ongoing,Seen limping and reluctant to explain. Typo heree.
+245,1.0,Other,Suburban,Sexual,High,Parent,Yes,Dismissed,Inappropriate comments made by caregiver. Unconfirmed report.
+246,7.0,Male,Urban,Sexual,Low,Police,Yes,Dismissed,Inappropriate comments made by caregiver. Unclear details.
+247,11.0,Male,Urban,Emotional,Medium,Parent,No,Ongoing,Low self-esteem observed by teacher. Unconfirmed report.
+248,9.0,Other,Suburban,Sexual,Medium,Police,Yes,Ongoing,"Signs of trauma, reported by neighbor. Unclear details."
+249,12.0,Other,Suburban,Physical,Medium,Teacher,No,Ongoing,Seen limping and reluctant to explain.
+250,3.0,Female,Urban,Physical,Low,Teacher,Yes,Ongoing,"Frequent injuries, parents claim accidental. Typo heree."
+251,4.0,Other,Urban,Physical,Medium,Other,Yes,Resolved,Child reported with bruises and scars. Unclear details.
+252,4.0,Female,Urban,Physical,Medium,Police,Yes,Ongoing,Seen limping and reluctant to explain. Typo heree.
+253,13.0,Other,Rural,Physical,Medium,Neighbor,Yes,Ongoing,Child reported with bruises and scars. Unclear details.
+254,10.0,Male,Suburban,Emotional,Medium,Other,No,Ongoing,Child shows signs of withdrawal and fear.
+255,5.0,Female,Rural,Physical,Medium,Teacher,Yes,Dismissed,Child reported with bruises and scars. Unclear details.
+256,7.0,Female,Suburban,Emotional,Medium,Police,Yes,Ongoing,Reports of constant yelling and verbal abuse.
+257,16.0,Female,Suburban,Physical,Medium,Other,No,Resolved,"Frequent injuries, parents claim accidental. Unconfirmed report."
+258,1.0,Male,Suburban,Neglect,Medium,Police,Yes,Resolved,"Repeated absence from school, reported malnutrition. Unclear details."
+259,12.0,Male,Suburban,Neglect,Medium,Teacher,Yes,Ongoing,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+260,2.0,Male,Suburban,Neglect,Low,Other,No,Resolved,"No supervision at home, child wandering streets. Unconfirmed report."
+261,7.0,Male,Suburban,Neglect,Low,Teacher,No,Dismissed,Child often appears hungry and unwashed. Unclear details.
+262,11.0,Male,Suburban,Emotional,Low,Parent,Yes,Ongoing,Low self-esteem observed by teacher.
+263,13.0,Female,Rural,Emotional,Low,Teacher,Yes,Resolved,Child shows signs of withdrawal and fear. Unconfirmed report.
+264,2.0,Male,Urban,Sexual,Medium,Police,Yes,Resolved,"Unusual behavior, child refuses to discuss. Unclear details."
+265,7.0,Female,Urban,Physical,Medium,Neighbor,Yes,Ongoing,Seen limping and reluctant to explain. Unconfirmed report.
+266,15.0,Male,Rural,Neglect,Low,Teacher,Yes,Resolved,Child often appears hungry and unwashed. Unclear details.
+267,11.0,Other,Rural,Emotional,High,Neighbor,Yes,Ongoing,Child shows signs of withdrawal and fear. Unconfirmed report.
+268,2.0,Female,Rural,Physical,Low,Parent,Yes,Resolved,Child reported with bruises and scars. Unconfirmed report.
+269,7.0,Other,Rural,Physical,Medium,Other,Yes,Dismissed,Seen limping and reluctant to explain. Typo heree.
+270,4.0,Female,Suburban,Emotional,Medium,Other,Yes,Resolved,Reports of constant yelling and verbal abuse. Unconfirmed report.
+271,11.0,Other,Urban,Neglect,Medium,Neighbor,Yes,Resolved,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+272,2.0,Male,Suburban,Sexual,Low,Other,No,Ongoing,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+273,16.0,Male,Urban,Physical,Medium,Teacher,No,Resolved,"Frequent injuries, parents claim accidental. Typo heree."
+274,7.0,Male,Urban,Sexual,Medium,Neighbor,Yes,Ongoing,"Unusual behavior, child refuses to discuss. Typo heree."
+275,13.0,Female,Rural,Neglect,High,Police,Yes,Dismissed,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+276,5.0,Other,Suburban,Neglect,Medium,Teacher,Yes,Ongoing,"Repeated absence from school, reported malnutrition. Unclear details."
+277,17.0,Male,Rural,Sexual,High,Teacher,Yes,Ongoing,Inappropriate comments made by caregiver. Unconfirmed report.
+278,12.0,Other,Suburban,Neglect,Low,Teacher,Yes,Resolved,Child often appears hungry and unwashed. Typo heree.
+279,7.0,Other,Urban,Physical,Medium,Police,Yes,Dismissed,Child reported with bruises and scars. Typo heree.
+280,6.0,Male,Rural,Sexual,Medium,Parent,Yes,Ongoing,Inappropriate comments made by caregiver. Typo heree.
+281,8.0,Male,Rural,Neglect,Medium,Other,No,Resolved,"Repeated absence from school, reported malnutrition."
+282,13.0,Other,Urban,Sexual,Low,Neighbor,Yes,Resolved,"Unusual behavior, child refuses to discuss. Unclear details."
+283,5.0,Male,Urban,Physical,Medium,Parent,Yes,Ongoing,Child reported with bruises and scars. Unconfirmed report.
+284,2.0,Male,Urban,Neglect,Medium,Neighbor,No,Resolved,"Repeated absence from school, reported malnutrition. Unclear details."
+285,9.0,Male,Rural,Physical,Medium,Other,Yes,Ongoing,Seen limping and reluctant to explain. Unclear details.
+286,11.0,Female,Suburban,Neglect,Medium,Police,Yes,Ongoing,Child often appears hungry and unwashed. Unconfirmed report.
+287,6.0,Other,Rural,Emotional,High,Teacher,Yes,Ongoing,Reports of constant yelling and verbal abuse. Typo heree.
+288,7.0,Other,Suburban,Neglect,Low,Teacher,Yes,Dismissed,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+289,7.0,Female,Rural,Sexual,High,Police,No,Ongoing,Inappropriate comments made by caregiver.
+290,6.0,Other,Rural,Neglect,High,Parent,Yes,Resolved,Child often appears hungry and unwashed. Unconfirmed report.
+291,11.0,Male,Urban,Physical,High,Parent,Yes,Dismissed,"Frequent injuries, parents claim accidental."
+292,11.0,Other,Suburban,Physical,Medium,Neighbor,Yes,Resolved,Seen limping and reluctant to explain. Unconfirmed report.
+293,7.0,Male,Rural,Neglect,Medium,Police,Yes,Dismissed,"No supervision at home, child wandering streets."
+294,2.0,Female,Rural,Sexual,High,Parent,No,Dismissed,Inappropriate comments made by caregiver. Typo heree.
+295,4.0,Male,Urban,Emotional,Low,Police,No,Dismissed,Reports of constant yelling and verbal abuse. Unconfirmed report.
+296,6.0,Other,Urban,Sexual,Medium,Other,Yes,Dismissed,"Signs of trauma, reported by neighbor. Unclear details."
+297,17.0,Other,Suburban,Emotional,Medium,Teacher,Yes,Resolved,Reports of constant yelling and verbal abuse. Unclear details.
+298,5.0,Other,Rural,Physical,Medium,Teacher,Yes,Ongoing,"Frequent injuries, parents claim accidental. Unconfirmed report."
+299,7.0,Female,Suburban,Sexual,Low,Teacher,No,Resolved,Inappropriate comments made by caregiver.
+300,9.0,Female,Rural,Emotional,Medium,Police,Yes,Ongoing,Reports of constant yelling and verbal abuse. Typo heree.
+301,1.0,Other,Suburban,Neglect,High,Police,Yes,Resolved,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+302,1.0,Male,Urban,Physical,Low,Neighbor,Yes,Dismissed,Seen limping and reluctant to explain. Unclear details.
+303,6.0,Female,Rural,Neglect,High,Teacher,Yes,Dismissed,"No supervision at home, child wandering streets. Unclear details."
+304,10.0,Other,Suburban,Physical,Low,Neighbor,Yes,Ongoing,Seen limping and reluctant to explain.
+305,11.0,Other,Urban,Sexual,Medium,Teacher,Yes,Ongoing,Inappropriate comments made by caregiver.
+306,1.0,Female,Urban,Sexual,Low,Neighbor,Yes,Resolved,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+307,1.0,Female,Suburban,Physical,Low,Neighbor,Yes,Ongoing,Child reported with bruises and scars. Unconfirmed report.
+308,13.0,Female,Rural,Physical,High,Other,Yes,Resolved,Child reported with bruises and scars.
+309,5.0,Male,Rural,Physical,Medium,Neighbor,No,Ongoing,"Frequent injuries, parents claim accidental. Unconfirmed report."
+310,1.0,Male,Urban,Sexual,Medium,Police,Yes,Ongoing,Inappropriate comments made by caregiver. Unclear details.
+311,3.0,Other,Rural,Emotional,Low,Neighbor,Yes,Ongoing,Reports of constant yelling and verbal abuse. Typo heree.
+312,9.0,Female,Rural,Neglect,Medium,Teacher,Yes,Dismissed,"No supervision at home, child wandering streets. Unconfirmed report."
+313,14.0,Male,Rural,Neglect,Medium,Neighbor,Yes,Dismissed,"No supervision at home, child wandering streets. Unconfirmed report."
+314,17.0,Female,Urban,Sexual,Medium,Parent,Yes,Resolved,Inappropriate comments made by caregiver.
+315,14.0,Other,Suburban,Neglect,Medium,Teacher,No,Ongoing,"No supervision at home, child wandering streets."
+316,4.0,Male,Rural,Physical,High,Parent,Yes,Resolved,Seen limping and reluctant to explain.
+317,5.0,Male,Urban,Emotional,Medium,Teacher,No,Ongoing,Reports of constant yelling and verbal abuse. Unclear details.
+318,17.0,Male,Urban,Neglect,Medium,Police,Yes,Dismissed,"Repeated absence from school, reported malnutrition."
+319,2.0,Other,Suburban,Emotional,Low,Police,Yes,Dismissed,Low self-esteem observed by teacher.
+320,5.0,Female,Rural,Physical,Medium,Police,Yes,Ongoing,Child reported with bruises and scars. Unclear details.
+321,4.0,Male,Rural,Neglect,Medium,Parent,Yes,Ongoing,Child often appears hungry and unwashed.
+322,4.0,Other,Suburban,Sexual,Medium,Other,No,Dismissed,"Signs of trauma, reported by neighbor. Unclear details."
+323,6.0,Female,Suburban,Emotional,Low,Teacher,No,Dismissed,Child shows signs of withdrawal and fear. Unclear details.
+324,13.0,Other,Urban,Physical,High,Police,No,Resolved,"Frequent injuries, parents claim accidental."
+325,5.0,Female,Urban,Emotional,Low,Teacher,No,Dismissed,Low self-esteem observed by teacher. Unclear details.
+326,7.0,Other,Suburban,Neglect,Medium,Parent,No,Ongoing,"No supervision at home, child wandering streets. Typo heree."
+327,1.0,Unknow,Rural,Neglect,Medium,Other,Yes,Resolved,"No supervision at home, child wandering streets. Unclear details."
+328,14.0,Male,Urban,Sexual,Low,Parent,Yes,Ongoing,"Signs of trauma, reported by neighbor."
+329,4.0,Female,Urban,Physical,Medium,Teacher,Yes,Resolved,Child reported with bruises and scars. Typo heree.
+330,17.0,Other,Rural,Physical,Medium,Other,Yes,Ongoing,Child reported with bruises and scars.
+331,14.0,Other,Urban,Sexual,High,Other,No,Dismissed,Inappropriate comments made by caregiver. Unconfirmed report.
+332,16.0,Female,Rural,Sexual,High,Parent,Yes,Ongoing,Inappropriate comments made by caregiver. Unclear details.
+333,14.0,Male,Rural,Physical,High,Police,Yes,Resolved,Child reported with bruises and scars. Unclear details.
+334,16.0,Male,Rural,Emotional,Low,Teacher,Yes,Ongoing,Child shows signs of withdrawal and fear. Typo heree.
+335,8.0,Female,Suburban,Emotional,Medium,Neighbor,Yes,Resolved,Low self-esteem observed by teacher.
+336,3.0,Female,Suburban,Sexual,Medium,Neighbor,Yes,Ongoing,"Signs of trauma, reported by neighbor."
+337,1.0,Other,Suburban,Emotional,High,Parent,Yes,Dismissed,Reports of constant yelling and verbal abuse. Unconfirmed report.
+338,2.0,Male,Rural,Physical,Medium,Teacher,Yes,Dismissed,Seen limping and reluctant to explain. Typo heree.
+339,15.0,Female,Rural,Neglect,High,Teacher,Yes,Ongoing,Child often appears hungry and unwashed. Typo heree.
+340,10.0,Male,Suburban,Neglect,Medium,Parent,Yes,Ongoing,Child often appears hungry and unwashed. Unconfirmed report.
+341,14.0,Female,Urban,Emotional,Medium,Teacher,Yes,Ongoing,Reports of constant yelling and verbal abuse.
+342,17.0,Female,Rural,Sexual,Low,Police,Yes,Resolved,Inappropriate comments made by caregiver. Typo heree.
+343,13.0,Male,Urban,Sexual,Medium,Parent,Yes,Ongoing,"Signs of trauma, reported by neighbor. Unconfirmed report."
+344,1.0,Female,Urban,Sexual,Medium,Police,Yes,Ongoing,"Signs of trauma, reported by neighbor. Unclear details."
+345,5.0,Female,Rural,Sexual,Medium,Teacher,Yes,Resolved,Inappropriate comments made by caregiver. Unclear details.
+346,13.0,Other,Rural,Sexual,Medium,Parent,Yes,Dismissed,"Signs of trauma, reported by neighbor. Typo heree."
+347,14.0,Female,Urban,Emotional,Medium,Teacher,Yes,Ongoing,Low self-esteem observed by teacher. Unconfirmed report.
+348,3.0,Female,Urban,Neglect,Low,Parent,Yes,Ongoing,"No supervision at home, child wandering streets. Unconfirmed report."
+349,15.0,Female,Suburban,Neglect,Medium,Teacher,Yes,Dismissed,"Repeated absence from school, reported malnutrition. Typo heree."
+350,17.0,Other,Suburban,Emotional,Medium,Police,Yes,Dismissed,Reports of constant yelling and verbal abuse. Unclear details.
+351,3.0,Male,Rural,Sexual,Medium,Police,No,Resolved,"Unusual behavior, child refuses to discuss. Typo heree."
+352,16.0,Other,Suburban,Emotional,Low,Teacher,Yes,Ongoing,Reports of constant yelling and verbal abuse. Unclear details.
+353,14.0,Other,Suburban,Neglect,Low,Parent,No,Ongoing,"No supervision at home, child wandering streets. Unconfirmed report."
+354,12.0,Male,Suburban,Physical,Low,Neighbor,Yes,Resolved,"Frequent injuries, parents claim accidental."
+355,12.0,Other,Suburban,Emotional,Medium,Police,Yes,Dismissed,Reports of constant yelling and verbal abuse. Typo heree.
+356,11.0,Male,Urban,Sexual,Low,Police,Yes,Resolved,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+357,17.0,Other,Rural,Neglect,Medium,Neighbor,Yes,Dismissed,Child often appears hungry and unwashed. Typo heree.
+358,8.0,Male,Suburban,Neglect,High,Teacher,Yes,Resolved,"No supervision at home, child wandering streets. Typo heree."
+359,17.0,Female,Urban,Neglect,Low,Parent,Yes,Dismissed,"No supervision at home, child wandering streets. Typo heree."
+360,11.0,Other,Urban,Neglect,Medium,Teacher,Yes,Resolved,"Repeated absence from school, reported malnutrition."
+361,2.0,Other,Urban,Sexual,Medium,Other,Yes,Dismissed,"Signs of trauma, reported by neighbor. Unclear details."
+362,10.0,Other,Suburban,Physical,High,Police,Yes,Dismissed,Child reported with bruises and scars. Unclear details.
+363,10.0,Other,Suburban,Neglect,Medium,Other,Yes,Dismissed,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+364,11.0,Female,Rural,Emotional,Medium,Police,Yes,Dismissed,Reports of constant yelling and verbal abuse. Unclear details.
+365,6.0,Other,Suburban,Physical,High,Police,Yes,Dismissed,Seen limping and reluctant to explain. Unconfirmed report.
+366,4.0,Female,Suburban,Neglect,Medium,Other,No,Ongoing,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+367,12.0,Female,Urban,Physical,High,Other,No,Dismissed,"Frequent injuries, parents claim accidental."
+368,11.0,Female,Rural,Emotional,Low,Teacher,No,Ongoing,Child shows signs of withdrawal and fear. Typo heree.
+369,13.0,Female,Suburban,Neglect,High,Other,Yes,Dismissed,Child often appears hungry and unwashed. Unconfirmed report.
+370,5.0,Male,Suburban,Emotional,Medium,Teacher,No,Ongoing,Low self-esteem observed by teacher. Unclear details.
+371,6.0,Male,Urban,Sexual,Medium,Teacher,No,Ongoing,Inappropriate comments made by caregiver. Typo heree.
+372,1.0,Other,Urban,Neglect,Low,Teacher,Yes,Resolved,"No supervision at home, child wandering streets. Typo heree."
+373,6.0,Male,Suburban,Neglect,Medium,Police,Yes,Dismissed,"No supervision at home, child wandering streets. Typo heree."
+374,9.0,Male,Rural,Neglect,Low,Police,No,Resolved,"No supervision at home, child wandering streets. Unconfirmed report."
+375,15.0,Other,Rural,Neglect,High,Other,Yes,Resolved,"No supervision at home, child wandering streets. Typo heree."
+376,8.0,Other,Urban,Sexual,High,Police,Yes,Dismissed,Inappropriate comments made by caregiver. Unclear details.
+377,16.0,Other,Urban,Neglect,Low,Other,Yes,Resolved,Child often appears hungry and unwashed. Unclear details.
+378,6.0,Male,Suburban,Physical,High,Police,Yes,Dismissed,"Frequent injuries, parents claim accidental."
+379,6.0,Male,Urban,Neglect,Medium,Parent,No,Resolved,"Repeated absence from school, reported malnutrition. Unclear details."
+380,3.0,Other,Suburban,Sexual,Medium,Parent,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Unclear details."
+381,10.0,Female,Rural,Neglect,Medium,Other,Yes,Dismissed,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+382,1.0,Other,Rural,Physical,Low,Police,Yes,Dismissed,"Frequent injuries, parents claim accidental. Typo heree."
+383,14.0,Female,Suburban,Sexual,Low,Police,Yes,Ongoing,"Unusual behavior, child refuses to discuss. Unclear details."
+384,4.0,Female,Urban,Sexual,Medium,Teacher,Yes,Resolved,Inappropriate comments made by caregiver. Unclear details.
+385,12.0,Other,Rural,Physical,High,Neighbor,Yes,Ongoing,"Frequent injuries, parents claim accidental. Unclear details."
+386,6.0,Other,Urban,Physical,Low,Other,No,Resolved,"Frequent injuries, parents claim accidental."
+387,11.0,Other,Rural,Physical,High,Neighbor,Yes,Resolved,Seen limping and reluctant to explain. Unclear details.
+388,12.0,Male,Suburban,Physical,Medium,Neighbor,Yes,Resolved,"Frequent injuries, parents claim accidental."
+389,10.0,Female,Suburban,Physical,Medium,Other,Yes,Ongoing,Child reported with bruises and scars. Typo heree.
+390,7.0,Male,Suburban,Sexual,Medium,Police,Yes,Resolved,"Signs of trauma, reported by neighbor. Unclear details."
+391,7.0,Male,Rural,Sexual,High,Other,No,Ongoing,"Signs of trauma, reported by neighbor. Unconfirmed report."
+392,11.0,Other,Urban,Neglect,Medium,Neighbor,No,Dismissed,Child often appears hungry and unwashed.
+393,4.0,Male,Urban,Neglect,Medium,Police,No,Resolved,"Repeated absence from school, reported malnutrition. Typo heree."
+394,1.0,Other,Urban,Emotional,Medium,Parent,Yes,Resolved,Reports of constant yelling and verbal abuse. Unconfirmed report.
+395,13.0,Female,Rural,Neglect,Low,Other,Yes,Dismissed,"No supervision at home, child wandering streets. Typo heree."
+396,9.0,Other,Rural,Neglect,Low,Other,Yes,Dismissed,Child often appears hungry and unwashed.
+397,9.0,Male,Rural,Physical,Medium,Police,Yes,Resolved,"Frequent injuries, parents claim accidental. Unconfirmed report."
+398,9.0,Male,Rural,Physical,Medium,Parent,No,Dismissed,Child reported with bruises and scars.
+399,10.0,Other,Rural,Neglect,Medium,Parent,No,Ongoing,"No supervision at home, child wandering streets. Unconfirmed report."
+400,2.0,Other,Urban,Emotional,Medium,Police,No,Ongoing,Child shows signs of withdrawal and fear.
+401,6.0,Male,Rural,Physical,Medium,Teacher,No,Resolved,Child reported with bruises and scars. Unclear details.
+402,15.0,Female,Rural,Neglect,Medium,Other,No,Ongoing,"Repeated absence from school, reported malnutrition. Typo heree."
+403,3.0,Female,Urban,Neglect,Medium,Other,Yes,Ongoing,Child often appears hungry and unwashed. Unclear details.
+404,11.0,Other,Rural,Sexual,High,Neighbor,Yes,Resolved,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+405,6.0,Female,Urban,Emotional,Medium,Police,Yes,Dismissed,Low self-esteem observed by teacher. Unclear details.
+406,3.0,Male,Urban,Sexual,Medium,Neighbor,Yes,Resolved,"Signs of trauma, reported by neighbor. Unconfirmed report."
+407,11.0,Other,Suburban,Emotional,Low,Neighbor,Yes,Ongoing,Reports of constant yelling and verbal abuse. Unconfirmed report.
+408,15.0,Male,Suburban,Physical,Medium,Parent,Yes,Resolved,"Frequent injuries, parents claim accidental. Unconfirmed report."
+409,13.0,Male,Suburban,Emotional,Medium,Other,No,Resolved,Reports of constant yelling and verbal abuse.
+410,10.0,Female,Suburban,Neglect,Medium,Neighbor,Yes,Ongoing,"Repeated absence from school, reported malnutrition."
+411,6.0,Other,Rural,Neglect,Medium,Parent,No,Ongoing,Child often appears hungry and unwashed. Unclear details.
+412,15.0,Other,Suburban,Emotional,High,Police,No,Resolved,Reports of constant yelling and verbal abuse.
+413,7.0,Female,Urban,Emotional,Low,Neighbor,Yes,Ongoing,Child shows signs of withdrawal and fear. Unclear details.
+414,15.0,Male,Rural,Emotional,Medium,Other,Yes,Ongoing,Child shows signs of withdrawal and fear.
+415,9.0,Male,Suburban,Sexual,Medium,Neighbor,Yes,Ongoing,"Unusual behavior, child refuses to discuss."
+416,2.0,Male,Urban,Emotional,Low,Police,No,Ongoing,Reports of constant yelling and verbal abuse. Unconfirmed report.
+417,8.0,Male,Rural,Physical,Low,Neighbor,No,Ongoing,Seen limping and reluctant to explain. Unconfirmed report.
+418,2.0,Other,Rural,Sexual,Medium,Other,No,Ongoing,Inappropriate comments made by caregiver.
+419,11.0,Other,Suburban,Sexual,Low,Parent,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Typo heree."
+420,7.0,Female,Rural,Emotional,Low,Other,Yes,Resolved,Low self-esteem observed by teacher. Typo heree.
+421,6.0,Female,Urban,Physical,Low,Parent,Yes,Ongoing,Seen limping and reluctant to explain. Unconfirmed report.
+422,10.0,Other,Rural,Sexual,Medium,Teacher,No,Resolved,"Unusual behavior, child refuses to discuss. Unclear details."
+423,5.0,Other,Urban,Neglect,Medium,Other,Yes,Dismissed,"No supervision at home, child wandering streets. Unclear details."
+424,11.0,Male,Rural,Sexual,Medium,Other,Yes,Ongoing,Inappropriate comments made by caregiver.
+425,1.0,Male,Suburban,Emotional,High,Police,Yes,Resolved,Low self-esteem observed by teacher. Unclear details.
+426,2.0,Female,Urban,Physical,Medium,Neighbor,Yes,Ongoing,Seen limping and reluctant to explain. Unclear details.
+427,1.0,Other,Rural,Emotional,Medium,Parent,Yes,Ongoing,Reports of constant yelling and verbal abuse. Unclear details.
+428,2.0,Female,Rural,Neglect,High,Parent,Yes,Ongoing,Child often appears hungry and unwashed.
+429,4.0,Other,Rural,Neglect,Medium,Police,Yes,Ongoing,Child often appears hungry and unwashed. Typo heree.
+430,12.0,Male,Urban,Neglect,Medium,Police,Yes,Ongoing,"Repeated absence from school, reported malnutrition. Typo heree."
+431,1.0,Female,Urban,Emotional,Medium,Neighbor,No,Ongoing,Reports of constant yelling and verbal abuse.
+432,1.0,Female,Urban,Sexual,Low,Neighbor,No,Ongoing,Inappropriate comments made by caregiver. Typo heree.
+433,14.0,Other,Suburban,Emotional,Medium,Other,Yes,Dismissed,Low self-esteem observed by teacher. Unconfirmed report.
+434,4.0,Male,Suburban,Physical,Medium,Teacher,No,Dismissed,"Frequent injuries, parents claim accidental. Unconfirmed report."
+435,5.0,Female,Urban,Sexual,Medium,Neighbor,Yes,Ongoing,Inappropriate comments made by caregiver.
+436,11.0,Male,Rural,Neglect,Low,Police,Yes,Ongoing,"Repeated absence from school, reported malnutrition."
+437,13.0,Female,Suburban,Emotional,High,Neighbor,No,Dismissed,Reports of constant yelling and verbal abuse. Typo heree.
+438,16.0,Male,Urban,Neglect,Medium,Parent,No,Dismissed,"Repeated absence from school, reported malnutrition. Typo heree."
+439,13.0,Other,Rural,Neglect,Medium,Teacher,No,Dismissed,Child often appears hungry and unwashed.
+440,2.0,Female,Suburban,Physical,High,Other,Yes,Ongoing,Child reported with bruises and scars.
+441,16.0,Female,Rural,Sexual,Medium,Parent,Yes,Resolved,"Signs of trauma, reported by neighbor. Typo heree."
+442,6.0,Male,Rural,Physical,High,Parent,No,Resolved,Seen limping and reluctant to explain.
+443,14.0,Male,Rural,Physical,Medium,Teacher,Yes,Resolved,Child reported with bruises and scars. Unconfirmed report.
+444,1.0,Female,Rural,Physical,Low,Other,Yes,Resolved,Seen limping and reluctant to explain. Unconfirmed report.
+445,17.0,Other,Suburban,Neglect,Medium,Police,No,Ongoing,"No supervision at home, child wandering streets. Unclear details."
+446,11.0,Male,Suburban,Physical,Medium,Other,No,Resolved,Seen limping and reluctant to explain. Unconfirmed report.
+447,3.0,Male,Suburban,Physical,Medium,Neighbor,No,Dismissed,Seen limping and reluctant to explain. Unconfirmed report.
+448,11.0,Male,Urban,Sexual,High,Parent,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+449,5.0,Female,Suburban,Sexual,Medium,Neighbor,No,Resolved,Inappropriate comments made by caregiver. Unconfirmed report.
+450,17.0,Female,Rural,Physical,Medium,Police,Yes,Dismissed,"Frequent injuries, parents claim accidental. Typo heree."
+451,7.0,Female,Suburban,Sexual,High,Neighbor,Yes,Ongoing,"Signs of trauma, reported by neighbor."
+452,10.0,Female,Rural,Sexual,Medium,Other,Yes,Resolved,"Unusual behavior, child refuses to discuss. Typo heree."
+453,11.0,Other,Urban,Physical,Medium,Neighbor,Yes,Resolved,"Frequent injuries, parents claim accidental. Unconfirmed report."
+454,3.0,Other,Rural,Neglect,High,Police,Yes,Ongoing,"No supervision at home, child wandering streets. Unconfirmed report."
+455,10.0,Female,Rural,Physical,Low,Police,Yes,Dismissed,Seen limping and reluctant to explain.
+456,10.0,Other,Rural,Sexual,Medium,Police,Yes,Ongoing,Inappropriate comments made by caregiver.
+457,14.0,Male,Urban,Neglect,High,Other,Yes,Ongoing,"No supervision at home, child wandering streets. Typo heree."
+458,12.0,Male,Suburban,Emotional,Medium,Police,Yes,Dismissed,Reports of constant yelling and verbal abuse.
+459,15.0,Male,Suburban,Neglect,Medium,Parent,Yes,Ongoing,"No supervision at home, child wandering streets."
+460,10.0,Female,Urban,Sexual,Medium,Police,Yes,Dismissed,"Signs of trauma, reported by neighbor. Unconfirmed report."
+461,10.0,Male,Rural,Neglect,Medium,Neighbor,No,Dismissed,"No supervision at home, child wandering streets."
+462,1.0,Other,Suburban,Physical,High,Neighbor,No,Ongoing,Child reported with bruises and scars. Typo heree.
+463,10.0,Female,Urban,Emotional,Low,Neighbor,Yes,Dismissed,Low self-esteem observed by teacher. Unconfirmed report.
+464,2.0,Other,Suburban,Emotional,Low,Other,No,Ongoing,Low self-esteem observed by teacher. Unconfirmed report.
+465,17.0,Male,Urban,Emotional,Low,Neighbor,Yes,Dismissed,Child shows signs of withdrawal and fear. Unclear details.
+466,7.0,Male,Rural,Sexual,Medium,Other,Yes,Resolved,Inappropriate comments made by caregiver. Unclear details.
+467,7.0,Male,Suburban,Sexual,Medium,Other,No,Dismissed,Inappropriate comments made by caregiver. Unconfirmed report.
+468,9.0,Female,Urban,Emotional,High,Police,Yes,Dismissed,Low self-esteem observed by teacher. Unconfirmed report.
+469,2.0,Other,Suburban,Neglect,Medium,Parent,No,Ongoing,Child often appears hungry and unwashed.
+470,14.0,Female,Suburban,Emotional,Medium,Police,Yes,Dismissed,Low self-esteem observed by teacher. Unclear details.
+471,17.0,Female,Suburban,Neglect,Low,Police,No,Resolved,"Repeated absence from school, reported malnutrition. Unclear details."
+472,1.0,Male,Suburban,Neglect,Medium,Other,Yes,Resolved,"No supervision at home, child wandering streets."
+473,9.0,Female,Urban,Sexual,Medium,Other,Yes,Dismissed,"Signs of trauma, reported by neighbor. Unconfirmed report."
+474,4.0,Female,Rural,Neglect,Low,Neighbor,Yes,Dismissed,Child often appears hungry and unwashed. Unclear details.
+475,8.0,Male,Urban,Emotional,Low,Neighbor,No,Resolved,Child shows signs of withdrawal and fear. Unconfirmed report.
+476,13.0,Female,Urban,Sexual,Low,Police,Yes,Ongoing,"Unusual behavior, child refuses to discuss. Unclear details."
+477,4.0,Male,Urban,Physical,Low,Teacher,No,Resolved,"Frequent injuries, parents claim accidental. Typo heree."
+478,9.0,Male,Rural,Physical,Medium,Teacher,Yes,Resolved,Seen limping and reluctant to explain. Typo heree.
+479,9.0,Male,Suburban,Sexual,Low,Neighbor,Yes,Dismissed,Inappropriate comments made by caregiver. Unconfirmed report.
+480,12.0,Male,Suburban,Emotional,Medium,Teacher,Yes,Dismissed,Reports of constant yelling and verbal abuse. Unclear details.
+481,10.0,Female,Suburban,Physical,High,Neighbor,Yes,Resolved,"Frequent injuries, parents claim accidental. Unclear details."
+482,11.0,Male,Rural,Physical,Medium,Other,No,Ongoing,"Frequent injuries, parents claim accidental. Unclear details."
+483,7.0,Male,Suburban,Neglect,High,Police,Yes,Resolved,"Repeated absence from school, reported malnutrition. Unclear details."
+484,9.0,Female,Rural,Neglect,Medium,Parent,Yes,Resolved,Child often appears hungry and unwashed. Typo heree.
+485,6.0,Female,Suburban,Emotional,Medium,Police,Yes,Ongoing,Reports of constant yelling and verbal abuse. Typo heree.
+486,16.0,Other,Suburban,Sexual,High,Neighbor,Yes,Resolved,"Signs of trauma, reported by neighbor. Typo heree."
+487,15.0,Female,Urban,Emotional,Low,Neighbor,No,Resolved,Child shows signs of withdrawal and fear. Typo heree.
+488,7.0,Female,Rural,Sexual,High,Police,Yes,Dismissed,"Signs of trauma, reported by neighbor. Typo heree."
+489,16.0,Other,Urban,Physical,Low,Neighbor,Yes,Ongoing,Seen limping and reluctant to explain. Unconfirmed report.
+490,5.0,Female,Urban,Neglect,Medium,Teacher,No,Dismissed,Child often appears hungry and unwashed. Unconfirmed report.
+491,16.0,Female,Urban,Emotional,Low,Teacher,No,Dismissed,Low self-esteem observed by teacher. Unconfirmed report.
+492,1.0,Female,Rural,Emotional,Medium,Neighbor,Yes,Ongoing,Reports of constant yelling and verbal abuse. Typo heree.
+493,5.0,Female,Rural,Sexual,Medium,Neighbor,Yes,Ongoing,"Signs of trauma, reported by neighbor. Unconfirmed report."
+494,7.0,Other,Suburban,Sexual,Medium,Teacher,Yes,Resolved,Inappropriate comments made by caregiver. Typo heree.
+495,5.0,Female,Urban,Emotional,Medium,Neighbor,Yes,Dismissed,Child shows signs of withdrawal and fear. Unclear details.
+496,17.0,Female,Suburban,Sexual,Medium,Neighbor,No,Ongoing,"Signs of trauma, reported by neighbor. Unconfirmed report."
+497,8.0,Other,Urban,Emotional,Low,Police,Yes,Dismissed,Child shows signs of withdrawal and fear. Unconfirmed report.
+498,1.0,Male,Rural,Emotional,Medium,Parent,Yes,Dismissed,Child shows signs of withdrawal and fear. Typo heree.
+499,2.0,Other,Rural,Emotional,High,Teacher,Yes,Ongoing,Low self-esteem observed by teacher. Unconfirmed report.
+500,15.0,Male,Rural,Physical,Medium,Police,Yes,Resolved,Seen limping and reluctant to explain. Unconfirmed report.
+501,11.0,Other,Urban,Sexual,High,Parent,Yes,Dismissed,Inappropriate comments made by caregiver. Unclear details.
+502,10.0,Other,Rural,Neglect,High,Neighbor,Yes,Ongoing,"No supervision at home, child wandering streets."
+503,4.0,Female,Urban,Neglect,Medium,Neighbor,Yes,Resolved,Child often appears hungry and unwashed. Typo heree.
+504,5.0,Male,Suburban,Sexual,Medium,Police,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+505,4.0,Female,Urban,Emotional,Low,Neighbor,Yes,Ongoing,Child shows signs of withdrawal and fear. Unconfirmed report.
+506,13.0,Male,Suburban,Neglect,Low,Other,Yes,Dismissed,Child often appears hungry and unwashed. Unclear details.
+507,13.0,Other,Urban,Neglect,Low,Police,Yes,Ongoing,"No supervision at home, child wandering streets. Unclear details."
+508,2.0,Other,Suburban,Sexual,Medium,Parent,Yes,Ongoing,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+509,16.0,Male,Rural,Neglect,Medium,Police,Yes,Dismissed,"No supervision at home, child wandering streets. Typo heree."
+510,1.0,Female,Suburban,Emotional,Medium,Teacher,Yes,Dismissed,Low self-esteem observed by teacher. Unconfirmed report.
+511,9.0,Female,Rural,Sexual,Medium,Police,Yes,Ongoing,"Signs of trauma, reported by neighbor."
+512,3.0,Female,Rural,Emotional,Medium,Neighbor,Yes,Resolved,Reports of constant yelling and verbal abuse. Unconfirmed report.
+513,7.0,Female,Suburban,Neglect,Medium,Neighbor,No,Dismissed,"No supervision at home, child wandering streets. Unconfirmed report."
+514,10.0,Other,Urban,Neglect,Medium,Other,No,Ongoing,"Repeated absence from school, reported malnutrition."
+515,1.0,Other,Urban,Emotional,Low,Other,No,Ongoing,Low self-esteem observed by teacher.
+516,10.0,Other,Urban,Physical,Low,Other,Yes,Resolved,Child reported with bruises and scars. Typo heree.
+517,9.0,Other,Urban,Neglect,Medium,Parent,No,Resolved,Child often appears hungry and unwashed.
+518,15.0,Other,Urban,Physical,Medium,Other,Yes,Resolved,"Frequent injuries, parents claim accidental."
+519,15.0,Female,Rural,Neglect,Medium,Parent,Yes,Dismissed,"Repeated absence from school, reported malnutrition."
+520,3.0,Female,Urban,Physical,Medium,Other,Yes,Ongoing,"Frequent injuries, parents claim accidental. Unclear details."
+521,5.0,Female,Rural,Physical,Medium,Parent,No,Ongoing,Seen limping and reluctant to explain. Typo heree.
+522,9.0,Female,Rural,Physical,Low,Unknown,Yes,Ongoing,Child reported with bruises and scars.
+523,9.0,Other,Rural,Emotional,Low,Police,Yes,Resolved,Reports of constant yelling and verbal abuse.
+524,7.0,Other,Suburban,Physical,Medium,Neighbor,No,Ongoing,"Frequent injuries, parents claim accidental. Typo heree."
+525,12.0,Other,Suburban,Physical,Medium,Parent,No,Dismissed,"Frequent injuries, parents claim accidental. Unconfirmed report."
+526,9.0,Male,Rural,Physical,Medium,Teacher,Yes,Resolved,Child reported with bruises and scars. Unclear details.
+527,6.0,Female,Suburban,Neglect,High,Neighbor,Yes,Resolved,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+528,2.0,Female,Urban,Physical,Medium,Police,Yes,Resolved,Seen limping and reluctant to explain. Unclear details.
+529,9.0,Other,Urban,Neglect,Medium,Parent,No,Resolved,Child often appears hungry and unwashed. Unclear details.
+530,17.0,Female,Rural,Physical,Medium,Other,Yes,Dismissed,Child reported with bruises and scars. Unconfirmed report.
+531,1.0,Female,Urban,Physical,Medium,Teacher,Yes,Ongoing,Seen limping and reluctant to explain. Unclear details.
+532,6.0,Other,Rural,Emotional,Medium,Police,No,Dismissed,Reports of constant yelling and verbal abuse. Unclear details.
+533,5.0,Male,Rural,Neglect,Medium,Neighbor,Yes,Ongoing,Child often appears hungry and unwashed. Unconfirmed report.
+534,2.0,Male,Urban,Physical,Medium,Parent,Yes,Dismissed,Seen limping and reluctant to explain. Typo heree.
+535,9.0,Male,Suburban,Neglect,Low,Teacher,Yes,Resolved,"No supervision at home, child wandering streets. Typo heree."
+536,14.0,Other,Urban,Neglect,Medium,Parent,Yes,Resolved,"Repeated absence from school, reported malnutrition."
+537,4.0,Female,Urban,Sexual,High,Other,Yes,Dismissed,Inappropriate comments made by caregiver. Typo heree.
+538,4.0,Other,Rural,Emotional,High,Neighbor,Yes,Dismissed,Low self-esteem observed by teacher. Unclear details.
+539,15.0,Other,Rural,Emotional,Medium,Parent,Yes,Ongoing,Child shows signs of withdrawal and fear. Unconfirmed report.
+540,8.0,Female,Rural,Emotional,Medium,Police,Yes,Dismissed,Reports of constant yelling and verbal abuse. Typo heree.
+541,4.0,Male,Rural,Sexual,Medium,Neighbor,Yes,Dismissed,"Signs of trauma, reported by neighbor. Unconfirmed report."
+542,16.0,Male,Suburban,Sexual,Medium,Police,No,Ongoing,"Signs of trauma, reported by neighbor. Typo heree."
+543,4.0,Other,Suburban,Emotional,Low,Parent,No,Ongoing,Reports of constant yelling and verbal abuse. Typo heree.
+544,16.0,Male,Suburban,Sexual,Medium,Neighbor,Yes,Ongoing,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+545,12.0,Other,Rural,Sexual,Medium,Police,Yes,Dismissed,Inappropriate comments made by caregiver.
+546,16.0,Other,Rural,Sexual,High,Other,Yes,Ongoing,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+547,8.0,Female,Rural,Emotional,Medium,Other,No,Resolved,Low self-esteem observed by teacher. Typo heree.
+548,6.0,Female,Suburban,Emotional,Medium,Parent,Yes,Resolved,Low self-esteem observed by teacher. Typo heree.
+549,10.0,Female,Rural,Emotional,Medium,Neighbor,No,Resolved,Low self-esteem observed by teacher. Typo heree.
+550,5.0,Other,Urban,Sexual,Medium,Teacher,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+551,10.0,Female,Urban,Emotional,Medium,Neighbor,No,Resolved,Reports of constant yelling and verbal abuse.
+552,10.0,Male,Rural,Sexual,Low,Other,No,Dismissed,"Signs of trauma, reported by neighbor."
+553,7.0,Male,Urban,Physical,Medium,Police,No,Dismissed,Seen limping and reluctant to explain. Unconfirmed report.
+554,1.0,Other,Urban,Sexual,High,Teacher,Yes,Resolved,Inappropriate comments made by caregiver. Unclear details.
+555,7.0,Other,Suburban,Neglect,Medium,Parent,Yes,Ongoing,"Repeated absence from school, reported malnutrition. Typo heree."
+556,1.0,Female,Rural,Emotional,Low,Teacher,Yes,Dismissed,Child shows signs of withdrawal and fear. Unclear details.
+557,15.0,Other,Rural,Emotional,Medium,Parent,Yes,Resolved,Low self-esteem observed by teacher. Typo heree.
+558,4.0,Other,Suburban,Neglect,High,Teacher,Yes,Dismissed,"Repeated absence from school, reported malnutrition. Unclear details."
+559,10.0,Male,Urban,Sexual,Low,Parent,Yes,Ongoing,"Signs of trauma, reported by neighbor."
+560,9.0,Male,Urban,Physical,Medium,Parent,Yes,Ongoing,Seen limping and reluctant to explain.
+561,2.0,Female,Rural,Neglect,High,Teacher,Yes,Resolved,"No supervision at home, child wandering streets. Unconfirmed report."
+562,14.0,Other,Urban,Neglect,Medium,Teacher,Yes,Dismissed,Child often appears hungry and unwashed. Typo heree.
+563,16.0,Other,Suburban,Sexual,High,Parent,Yes,Dismissed,"Signs of trauma, reported by neighbor. Unclear details."
+564,1.0,Male,Suburban,Emotional,Medium,Other,No,Dismissed,Child shows signs of withdrawal and fear. Typo heree.
+565,2.0,Other,Rural,Sexual,Medium,Teacher,Yes,Dismissed,Inappropriate comments made by caregiver. Unconfirmed report.
+566,7.0,Male,Suburban,Neglect,Medium,Neighbor,Yes,Resolved,Child often appears hungry and unwashed. Unclear details.
+567,10.0,Female,Suburban,Unknown,Low,Police,Yes,Ongoing,Child often appears hungry and unwashed. Typo heree.
+568,1.0,Male,Rural,Emotional,Low,Parent,No,Resolved,Low self-esteem observed by teacher. Typo heree.
+569,13.0,Other,Suburban,Emotional,Medium,Parent,Yes,Dismissed,Child shows signs of withdrawal and fear. Typo heree.
+570,1.0,Female,Suburban,Emotional,Low,Police,Yes,Dismissed,Reports of constant yelling and verbal abuse. Typo heree.
+571,5.0,Male,Suburban,Sexual,Medium,Other,Yes,Ongoing,"Signs of trauma, reported by neighbor. Typo heree."
+572,16.0,Male,Urban,Emotional,High,Police,Yes,Dismissed,Child shows signs of withdrawal and fear. Unconfirmed report.
+573,15.0,Female,Rural,Neglect,High,Teacher,Yes,Resolved,Child often appears hungry and unwashed. Unclear details.
+574,17.0,Female,Rural,Neglect,Medium,Police,No,Resolved,Child often appears hungry and unwashed. Unconfirmed report.
+575,16.0,Male,Rural,Physical,High,Parent,No,Ongoing,Seen limping and reluctant to explain. Typo heree.
+576,13.0,Other,Urban,Sexual,Medium,Police,Yes,Resolved,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+577,11.0,Male,Urban,Physical,Medium,Neighbor,Yes,Resolved,Child reported with bruises and scars. Typo heree.
+578,17.0,Female,Rural,Neglect,Low,Teacher,Yes,Resolved,"Repeated absence from school, reported malnutrition."
+579,17.0,Male,Urban,Physical,Medium,Police,Yes,Resolved,"Frequent injuries, parents claim accidental. Typo heree."
+580,2.0,Female,Rural,Neglect,Medium,Parent,Yes,Dismissed,"Repeated absence from school, reported malnutrition. Typo heree."
+581,13.0,Female,Urban,Physical,Medium,Teacher,Yes,Resolved,Seen limping and reluctant to explain. Unconfirmed report.
+582,14.0,Other,Suburban,Emotional,Medium,Parent,No,Ongoing,Low self-esteem observed by teacher. Typo heree.
+583,11.0,Female,Suburban,Physical,Low,Other,No,Ongoing,Child reported with bruises and scars. Unclear details.
+584,10.0,Female,Rural,Emotional,Medium,Neighbor,Yes,Resolved,Reports of constant yelling and verbal abuse.
+585,3.0,Other,Urban,Emotional,High,Other,Yes,Ongoing,Low self-esteem observed by teacher. Typo heree.
+586,17.0,Female,Urban,Sexual,Medium,Neighbor,Yes,Resolved,"Signs of trauma, reported by neighbor. Unclear details."
+587,15.0,Other,Suburban,Emotional,High,Police,Yes,Ongoing,Low self-esteem observed by teacher.
+588,9.0,Other,Suburban,Emotional,High,Teacher,Yes,Ongoing,Low self-esteem observed by teacher. Unconfirmed report.
+589,10.0,Female,Urban,Physical,High,Police,Yes,Resolved,Seen limping and reluctant to explain. Typo heree.
+590,8.0,Female,Urban,Neglect,High,Neighbor,No,Resolved,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+591,13.0,Male,Urban,Sexual,High,Neighbor,No,Dismissed,"Unusual behavior, child refuses to discuss. Unclear details."
+592,5.0,Other,Urban,Emotional,Medium,Neighbor,Yes,Resolved,Child shows signs of withdrawal and fear.
+593,6.0,Male,Urban,Sexual,Low,Parent,Yes,Resolved,Inappropriate comments made by caregiver. Unconfirmed report.
+594,17.0,Female,Urban,Physical,Medium,Teacher,Yes,Dismissed,Child reported with bruises and scars.
+595,11.0,Male,Rural,Emotional,Medium,Police,Yes,Resolved,Child shows signs of withdrawal and fear. Unclear details.
+596,16.0,Other,Urban,Physical,Medium,Police,Yes,Resolved,"Frequent injuries, parents claim accidental. Unconfirmed report."
+597,9.0,Male,Suburban,Sexual,Medium,Other,Yes,Dismissed,Inappropriate comments made by caregiver. Unconfirmed report.
+598,2.0,Other,Rural,Unknown,High,Neighbor,Yes,Resolved,Seen limping and reluctant to explain. Unclear details.
+599,5.0,Female,Urban,Sexual,High,Neighbor,Yes,Resolved,Inappropriate comments made by caregiver.
+600,1.0,Female,Suburban,Physical,High,Neighbor,No,Dismissed,"Frequent injuries, parents claim accidental. Unconfirmed report."
+601,4.0,Other,Rural,Sexual,Medium,Police,Yes,Dismissed,Inappropriate comments made by caregiver.
+602,4.0,Female,Suburban,Neglect,Low,Other,Yes,Ongoing,"Repeated absence from school, reported malnutrition. Typo heree."
+603,3.0,Female,Urban,Physical,Low,Parent,Yes,Resolved,Child reported with bruises and scars. Unconfirmed report.
+604,9.0,Female,Urban,Physical,Medium,Teacher,Yes,Ongoing,"Frequent injuries, parents claim accidental. Unclear details."
+605,12.0,Female,Urban,Neglect,Low,Parent,Yes,Ongoing,"No supervision at home, child wandering streets."
+606,10.0,Other,Urban,Neglect,Low,Police,No,Dismissed,"Repeated absence from school, reported malnutrition. Typo heree."
+607,2.0,Male,Rural,Physical,High,Neighbor,No,Resolved,Seen limping and reluctant to explain. Typo heree.
+608,11.0,Male,Rural,Neglect,Medium,Teacher,Yes,Resolved,Child often appears hungry and unwashed. Unconfirmed report.
+609,10.0,Female,Suburban,Emotional,Medium,Police,Yes,Dismissed,Reports of constant yelling and verbal abuse. Unclear details.
+610,6.0,Male,Urban,Sexual,Low,Police,Yes,Ongoing,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+611,2.0,Male,Suburban,Sexual,Medium,Police,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Unclear details."
+612,2.0,Female,Rural,Sexual,Low,Teacher,No,Resolved,"Signs of trauma, reported by neighbor."
+613,10.0,Female,Urban,Emotional,High,Teacher,Yes,Dismissed,Child shows signs of withdrawal and fear. Typo heree.
+614,16.0,Male,Urban,Neglect,Medium,Other,Yes,Resolved,Child often appears hungry and unwashed. Unclear details.
+615,12.0,Other,Rural,Neglect,Medium,Other,Yes,Ongoing,"Repeated absence from school, reported malnutrition. Unclear details."
+616,1.0,Female,Rural,Physical,Medium,Parent,Yes,Resolved,Child reported with bruises and scars. Unclear details.
+617,8.0,Other,Rural,Neglect,Low,Teacher,No,Ongoing,"Repeated absence from school, reported malnutrition. Unclear details."
+618,16.0,Male,Rural,Physical,Medium,Teacher,Yes,Ongoing,Child reported with bruises and scars. Typo heree.
+619,13.0,Female,Rural,Emotional,Medium,Teacher,No,Resolved,Child shows signs of withdrawal and fear.
+620,15.0,Other,Urban,Sexual,Medium,Other,Yes,Resolved,Inappropriate comments made by caregiver. Unclear details.
+621,12.0,Female,Rural,Sexual,Low,Police,No,Ongoing,"Unusual behavior, child refuses to discuss. Typo heree."
+622,8.0,Male,Urban,Sexual,Medium,Neighbor,Yes,Dismissed,"Unusual behavior, child refuses to discuss."
+623,10.0,Other,Urban,Neglect,Medium,Other,Yes,Resolved,"Repeated absence from school, reported malnutrition."
+624,14.0,Male,Rural,Physical,High,Teacher,No,Ongoing,Child reported with bruises and scars.
+625,5.0,Male,Rural,Physical,Medium,Other,Yes,Ongoing,"Frequent injuries, parents claim accidental. Unclear details."
+626,15.0,Female,Urban,Emotional,Medium,Parent,Yes,Dismissed,Low self-esteem observed by teacher. Typo heree.
+627,6.0,Other,Rural,Neglect,Medium,Teacher,Yes,Resolved,Child often appears hungry and unwashed. Unclear details.
+628,11.0,Male,Rural,Emotional,Medium,Parent,No,Ongoing,Reports of constant yelling and verbal abuse.
+629,11.0,Male,Rural,Physical,Medium,Teacher,Yes,Dismissed,Child reported with bruises and scars. Unconfirmed report.
+630,10.0,Other,Suburban,Physical,Medium,Other,No,Ongoing,Seen limping and reluctant to explain.
+631,2.0,Male,Urban,Sexual,Medium,Police,Yes,Resolved,"Signs of trauma, reported by neighbor."
+632,9.0,Male,Suburban,Neglect,High,Neighbor,Yes,Dismissed,"No supervision at home, child wandering streets. Unconfirmed report."
+633,14.0,Other,Rural,Physical,Medium,Parent,No,Ongoing,"Frequent injuries, parents claim accidental."
+634,10.0,Other,Suburban,Sexual,High,Other,Yes,Dismissed,Inappropriate comments made by caregiver. Unclear details.
+635,4.0,Other,Rural,Neglect,Medium,Police,No,Resolved,"Repeated absence from school, reported malnutrition."
+636,6.0,Other,Suburban,Emotional,High,Other,No,Dismissed,Low self-esteem observed by teacher. Typo heree.
+637,14.0,Female,Rural,Neglect,High,Parent,Yes,Resolved,"No supervision at home, child wandering streets."
+638,4.0,Other,Suburban,Neglect,Medium,Neighbor,Yes,Ongoing,Child often appears hungry and unwashed. Unconfirmed report.
+639,15.0,Female,Suburban,Physical,High,Other,Yes,Resolved,"Frequent injuries, parents claim accidental. Unconfirmed report."
+640,16.0,Female,Suburban,Physical,Low,Teacher,No,Ongoing,Seen limping and reluctant to explain.
+641,7.0,Female,Urban,Neglect,High,Police,No,Ongoing,"No supervision at home, child wandering streets. Unconfirmed report."
+642,17.0,Male,Suburban,Physical,Medium,Other,Yes,Resolved,Child reported with bruises and scars.
+643,17.0,Female,Urban,Physical,Low,Police,Yes,Ongoing,"Frequent injuries, parents claim accidental. Unclear details."
+644,6.0,Female,Rural,Physical,Medium,Teacher,Yes,Dismissed,Child reported with bruises and scars. Unclear details.
+645,11.0,Male,Suburban,Sexual,High,Neighbor,No,Ongoing,Inappropriate comments made by caregiver. Typo heree.
+646,16.0,Male,Rural,Sexual,Low,Neighbor,Yes,Resolved,Inappropriate comments made by caregiver. Typo heree.
+647,8.0,Male,Rural,Neglect,Medium,Teacher,Yes,Dismissed,"No supervision at home, child wandering streets. Unconfirmed report."
+648,11.0,Other,Suburban,Physical,Medium,Police,Yes,Dismissed,Child reported with bruises and scars.
+649,7.0,Male,Urban,Sexual,High,Other,No,Ongoing,"Signs of trauma, reported by neighbor. Unclear details."
+650,10.0,Male,Suburban,Neglect,Medium,Teacher,Yes,Ongoing,"No supervision at home, child wandering streets. Unconfirmed report."
+651,9.0,Female,Rural,Physical,Low,Parent,Yes,Resolved,Child reported with bruises and scars. Unconfirmed report.
+652,4.0,Male,Rural,Emotional,Low,Police,Yes,Dismissed,Reports of constant yelling and verbal abuse. Unconfirmed report.
+653,15.0,Other,Suburban,Physical,Medium,Neighbor,Yes,Resolved,"Frequent injuries, parents claim accidental. Unconfirmed report."
+654,13.0,Male,Urban,Physical,Medium,Teacher,No,Ongoing,Seen limping and reluctant to explain.
+655,2.0,Other,Urban,Sexual,High,Neighbor,No,Dismissed,Inappropriate comments made by caregiver. Unconfirmed report.
+656,2.0,Male,Rural,Neglect,Low,Police,Yes,Resolved,"No supervision at home, child wandering streets. Typo heree."
+657,16.0,Male,Rural,Neglect,Medium,Neighbor,Yes,Resolved,"No supervision at home, child wandering streets. Unclear details."
+658,9.0,Male,Urban,Sexual,Low,Teacher,Yes,Resolved,"Signs of trauma, reported by neighbor. Unconfirmed report."
+659,13.0,Male,Suburban,Physical,Low,Police,Yes,Resolved,Child reported with bruises and scars.
+660,3.0,Other,Rural,Emotional,Medium,Parent,No,Resolved,Child shows signs of withdrawal and fear.
+661,9.0,Other,Urban,Physical,Medium,Teacher,Yes,Dismissed,"Frequent injuries, parents claim accidental."
+662,13.0,Female,Rural,Physical,Medium,Other,Yes,Resolved,Seen limping and reluctant to explain. Typo heree.
+663,2.0,Other,Suburban,Emotional,High,Teacher,Yes,Dismissed,Child shows signs of withdrawal and fear.
+664,8.0,Male,Urban,Sexual,Medium,Police,Yes,Resolved,"Signs of trauma, reported by neighbor. Typo heree."
+665,9.0,Female,Rural,Neglect,High,Teacher,Yes,Ongoing,"Repeated absence from school, reported malnutrition."
+666,16.0,Female,Suburban,Sexual,High,Parent,Yes,Ongoing,Inappropriate comments made by caregiver. Typo heree.
+667,2.0,Female,Rural,Sexual,Medium,Parent,Yes,Resolved,"Signs of trauma, reported by neighbor. Unconfirmed report."
+668,6.0,Male,Suburban,Physical,High,Other,No,Ongoing,Seen limping and reluctant to explain.
+669,8.0,Other,Suburban,Neglect,Medium,Neighbor,Yes,Dismissed,"No supervision at home, child wandering streets. Typo heree."
+670,5.0,Male,Urban,Neglect,Low,Police,Yes,Resolved,"No supervision at home, child wandering streets."
+671,9.0,Female,Suburban,Sexual,Medium,Police,No,Dismissed,"Signs of trauma, reported by neighbor. Unclear details."
+672,1.0,Male,Rural,Emotional,Low,Neighbor,Yes,Resolved,Child shows signs of withdrawal and fear. Unconfirmed report.
+673,9.0,Male,Suburban,Sexual,Medium,Parent,No,Ongoing,"Unusual behavior, child refuses to discuss."
+674,10.0,Other,Suburban,Emotional,Medium,Parent,Yes,Dismissed,Reports of constant yelling and verbal abuse. Typo heree.
+675,4.0,Other,Urban,Neglect,Low,Teacher,Yes,Ongoing,Child often appears hungry and unwashed. Typo heree.
+676,3.0,Female,Suburban,Sexual,Low,Other,Yes,Ongoing,"Signs of trauma, reported by neighbor. Unclear details."
+677,10.0,Male,Suburban,Physical,High,Other,Yes,Resolved,"Frequent injuries, parents claim accidental."
+678,15.0,Male,Rural,Sexual,Medium,Other,Yes,Dismissed,"Signs of trauma, reported by neighbor. Typo heree."
+679,11.0,Other,Urban,Neglect,Low,Teacher,No,Ongoing,Child often appears hungry and unwashed. Unclear details.
+680,14.0,Male,Urban,Physical,Medium,Other,Yes,Resolved,"Frequent injuries, parents claim accidental. Typo heree."
+681,6.0,Male,Urban,Physical,Medium,Neighbor,Yes,Resolved,"Frequent injuries, parents claim accidental. Typo heree."
+682,12.0,Male,Suburban,Emotional,Medium,Teacher,Yes,Resolved,Child shows signs of withdrawal and fear. Unclear details.
+683,13.0,Other,Urban,Physical,High,Neighbor,Yes,Ongoing,Child reported with bruises and scars. Unconfirmed report.
+684,17.0,Female,Suburban,Physical,Medium,Teacher,Yes,Resolved,Child reported with bruises and scars. Unclear details.
+685,16.0,Female,Suburban,Sexual,Medium,Other,Yes,Dismissed,"Signs of trauma, reported by neighbor."
+686,3.0,Male,Rural,Neglect,High,Neighbor,No,Dismissed,Child often appears hungry and unwashed. Unclear details.
+687,2.0,Female,Rural,Emotional,High,Neighbor,No,Ongoing,Reports of constant yelling and verbal abuse. Unconfirmed report.
+688,11.0,Other,Rural,Sexual,Low,Neighbor,Yes,Dismissed,Inappropriate comments made by caregiver. Typo heree.
+689,9.0,Other,Rural,Physical,Low,Teacher,Yes,Resolved,Child reported with bruises and scars. Typo heree.
+690,,Female,Rural,Physical,Low,Police,No,Ongoing,"Frequent injuries, parents claim accidental. Typo heree."
+691,15.0,Female,Suburban,Emotional,Medium,Other,No,Resolved,Low self-esteem observed by teacher.
+692,14.0,Male,Suburban,Neglect,Medium,Neighbor,Yes,Ongoing,Child often appears hungry and unwashed. Unclear details.
+693,2.0,Female,Urban,Emotional,Medium,Police,No,Ongoing,Child shows signs of withdrawal and fear.
+694,17.0,Male,Suburban,Sexual,High,Other,Yes,Resolved,"Signs of trauma, reported by neighbor."
+695,8.0,Male,Suburban,Emotional,Medium,Other,No,Dismissed,Reports of constant yelling and verbal abuse. Unconfirmed report.
+696,10.0,Other,Rural,Physical,Low,Neighbor,Yes,Dismissed,Seen limping and reluctant to explain. Unconfirmed report.
+697,8.0,Other,Suburban,Sexual,Medium,Neighbor,Yes,Ongoing,Inappropriate comments made by caregiver. Unconfirmed report.
+698,8.0,Other,Rural,Physical,Medium,Teacher,No,Resolved,"Frequent injuries, parents claim accidental. Typo heree."
+699,3.0,Other,Urban,Neglect,Medium,Police,Yes,Resolved,Child often appears hungry and unwashed.
+700,3.0,Female,Urban,Physical,Medium,Police,Yes,Ongoing,"Frequent injuries, parents claim accidental. Unconfirmed report."
+701,12.0,Other,Suburban,Physical,High,Neighbor,Yes,Dismissed,Child reported with bruises and scars. Typo heree.
+702,17.0,Female,Urban,Emotional,Medium,Other,No,Resolved,Low self-esteem observed by teacher. Unconfirmed report.
+703,4.0,Other,Suburban,Physical,Medium,Neighbor,No,Dismissed,Seen limping and reluctant to explain. Typo heree.
+704,17.0,Female,Urban,Sexual,Medium,Other,No,Dismissed,"Unusual behavior, child refuses to discuss. Unclear details."
+705,14.0,Male,Rural,Sexual,Medium,Other,Yes,Ongoing,Inappropriate comments made by caregiver.
+706,9.0,Female,Rural,Neglect,Low,Neighbor,No,Ongoing,Child often appears hungry and unwashed. Unclear details.
+707,12.0,Female,Rural,Sexual,Medium,Parent,Yes,Dismissed,Inappropriate comments made by caregiver. Unclear details.
+708,5.0,Other,Rural,Emotional,Low,Police,Yes,Resolved,Child shows signs of withdrawal and fear. Typo heree.
+709,11.0,Female,Suburban,Neglect,High,Other,No,Resolved,"No supervision at home, child wandering streets. Typo heree."
+710,3.0,Male,Urban,Sexual,Low,Other,Yes,Ongoing,"Unusual behavior, child refuses to discuss."
+711,15.0,Male,Suburban,Emotional,Medium,Parent,Yes,Dismissed,Reports of constant yelling and verbal abuse. Unconfirmed report.
+712,14.0,Other,Rural,Sexual,Medium,Teacher,Yes,Resolved,"Unusual behavior, child refuses to discuss. Unclear details."
+713,11.0,Male,Suburban,Sexual,High,Parent,Yes,Resolved,Inappropriate comments made by caregiver. Unclear details.
+714,8.0,Female,Urban,Physical,Low,Parent,No,Ongoing,Seen limping and reluctant to explain. Typo heree.
+715,4.0,Male,Suburban,Sexual,Low,Other,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+716,12.0,Other,Urban,Sexual,Low,Police,No,Resolved,"Signs of trauma, reported by neighbor."
+717,8.0,Female,Suburban,Emotional,Low,Parent,Yes,Ongoing,Reports of constant yelling and verbal abuse.
+718,6.0,Other,Urban,Emotional,Low,Teacher,Yes,Resolved,Reports of constant yelling and verbal abuse.
+719,15.0,Female,Urban,Physical,Medium,Neighbor,Yes,Resolved,"Frequent injuries, parents claim accidental. Unconfirmed report."
+720,12.0,Male,Rural,Sexual,Low,Parent,No,Resolved,"Signs of trauma, reported by neighbor. Unconfirmed report."
+721,16.0,Other,Urban,Physical,Low,Parent,Yes,Ongoing,Seen limping and reluctant to explain. Unconfirmed report.
+722,16.0,Other,Rural,Sexual,High,Teacher,No,Dismissed,Inappropriate comments made by caregiver.
+723,4.0,Female,Rural,Neglect,Medium,Police,Yes,Ongoing,"No supervision at home, child wandering streets."
+724,11.0,Other,Rural,Neglect,Medium,Parent,Yes,Dismissed,"No supervision at home, child wandering streets. Unclear details."
+725,13.0,Female,Suburban,Physical,Medium,Parent,Yes,Resolved,Seen limping and reluctant to explain. Unconfirmed report.
+726,9.0,Female,Suburban,Physical,High,Police,No,Dismissed,Seen limping and reluctant to explain. Typo heree.
+727,4.0,Female,Suburban,Physical,Low,Teacher,No,Resolved,Child reported with bruises and scars. Unconfirmed report.
+728,12.0,Female,Suburban,Emotional,High,Parent,Yes,Resolved,Child shows signs of withdrawal and fear. Unclear details.
+729,9.0,Male,Urban,Emotional,Medium,Police,Yes,Ongoing,Reports of constant yelling and verbal abuse. Unconfirmed report.
+730,13.0,Female,Urban,Emotional,Low,Parent,Yes,Resolved,Low self-esteem observed by teacher.
+731,16.0,Other,Suburban,Physical,High,Neighbor,No,Ongoing,"Frequent injuries, parents claim accidental. Typo heree."
+732,6.0,Male,Urban,Sexual,Low,Other,Yes,Dismissed,"Signs of trauma, reported by neighbor. Typo heree."
+733,10.0,Other,Urban,Neglect,Low,Neighbor,No,Dismissed,Child often appears hungry and unwashed. Typo heree.
+734,13.0,Male,Rural,Physical,High,Parent,No,Resolved,Child reported with bruises and scars.
+735,7.0,Female,Rural,Emotional,Medium,Teacher,Yes,Ongoing,Low self-esteem observed by teacher.
+736,17.0,Male,Rural,Emotional,Medium,Other,No,Resolved,Low self-esteem observed by teacher. Unclear details.
+737,13.0,Male,Rural,Physical,Low,Neighbor,Yes,Ongoing,"Frequent injuries, parents claim accidental. Typo heree."
+738,13.0,Other,Urban,Physical,Medium,Police,Yes,Ongoing,Seen limping and reluctant to explain. Unclear details.
+739,2.0,Other,Suburban,Emotional,Medium,Teacher,Yes,Ongoing,Child shows signs of withdrawal and fear.
+740,10.0,Female,Urban,Sexual,Medium,Neighbor,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Typo heree."
+741,13.0,Male,Urban,Emotional,Medium,Police,No,Ongoing,Child shows signs of withdrawal and fear. Unclear details.
+742,9.0,Male,Urban,Emotional,Low,Parent,Yes,Dismissed,Low self-esteem observed by teacher. Unclear details.
+743,1.0,Male,Rural,Physical,Low,Police,Yes,Ongoing,Seen limping and reluctant to explain.
+744,14.0,Female,Rural,Sexual,High,Neighbor,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+745,16.0,Female,Rural,Emotional,Medium,Neighbor,Yes,Dismissed,Reports of constant yelling and verbal abuse. Unconfirmed report.
+746,15.0,Female,Suburban,Emotional,High,Parent,Yes,Dismissed,Low self-esteem observed by teacher. Typo heree.
+747,1.0,Female,Urban,Neglect,Medium,Police,Yes,Resolved,"Repeated absence from school, reported malnutrition. Typo heree."
+748,17.0,Female,Suburban,Physical,Medium,Police,Yes,Ongoing,Child reported with bruises and scars. Unconfirmed report.
+749,13.0,Other,Rural,Neglect,Low,Parent,No,Resolved,Child often appears hungry and unwashed. Unconfirmed report.
+750,15.0,Male,Suburban,Neglect,Medium,Police,No,Ongoing,"No supervision at home, child wandering streets. Typo heree."
+751,16.0,Male,Urban,Emotional,Low,Parent,Yes,Ongoing,Reports of constant yelling and verbal abuse.
+752,16.0,Male,Urban,Physical,Medium,Teacher,No,Resolved,"Frequent injuries, parents claim accidental."
+753,2.0,Male,Rural,Sexual,Medium,Neighbor,Yes,Dismissed,Inappropriate comments made by caregiver. Unconfirmed report.
+754,17.0,Male,Rural,Emotional,High,Teacher,Yes,Ongoing,Reports of constant yelling and verbal abuse.
+755,11.0,Male,Suburban,Sexual,Medium,Other,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Typo heree."
+756,8.0,Male,Rural,Sexual,Low,Other,Yes,Resolved,Inappropriate comments made by caregiver.
+757,3.0,Male,Rural,Physical,Low,Other,Yes,Dismissed,Seen limping and reluctant to explain.
+758,12.0,Other,Urban,Unknown,Low,Parent,No,Ongoing,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+759,16.0,Male,Rural,Physical,Medium,Police,Yes,Ongoing,"Frequent injuries, parents claim accidental."
+760,14.0,Other,Rural,Sexual,Medium,Teacher,No,Ongoing,Inappropriate comments made by caregiver. Unclear details.
+761,16.0,Female,Urban,Emotional,High,Teacher,Yes,Resolved,Reports of constant yelling and verbal abuse. Unconfirmed report.
+762,17.0,Male,Urban,Sexual,Low,Teacher,No,Ongoing,"Signs of trauma, reported by neighbor. Unclear details."
+763,11.0,Female,Suburban,Emotional,Medium,Teacher,Yes,Resolved,Child shows signs of withdrawal and fear. Unconfirmed report.
+764,17.0,Female,Rural,Emotional,Medium,Other,Yes,Dismissed,Child shows signs of withdrawal and fear. Typo heree.
+765,1.0,Female,Urban,Physical,Medium,Teacher,Yes,Ongoing,Seen limping and reluctant to explain.
+766,12.0,Other,Suburban,Sexual,Medium,Police,Yes,Ongoing,"Signs of trauma, reported by neighbor. Unclear details."
+767,15.0,Female,Suburban,Neglect,Medium,Other,Yes,Ongoing,Child often appears hungry and unwashed. Unclear details.
+768,14.0,Female,Rural,Sexual,Medium,Teacher,No,Dismissed,"Signs of trauma, reported by neighbor. Unconfirmed report."
+769,1.0,Female,Rural,Sexual,Low,Parent,Yes,Ongoing,Inappropriate comments made by caregiver. Unclear details.
+770,13.0,Male,Suburban,Neglect,Medium,Neighbor,No,Resolved,"No supervision at home, child wandering streets. Typo heree."
+771,15.0,Male,Urban,Physical,Low,Neighbor,Yes,Dismissed,"Frequent injuries, parents claim accidental. Unconfirmed report."
+772,7.0,Other,Suburban,Sexual,Medium,Neighbor,No,Dismissed,Inappropriate comments made by caregiver. Typo heree.
+773,15.0,Other,Rural,Sexual,Medium,Other,Yes,Dismissed,"Signs of trauma, reported by neighbor."
+774,10.0,Unknow,Urban,Emotional,Medium,Teacher,Yes,Dismissed,Low self-esteem observed by teacher. Typo heree.
+775,14.0,Other,Urban,Sexual,High,Other,No,Dismissed,"Unusual behavior, child refuses to discuss. Typo heree."
+776,6.0,Male,Suburban,Neglect,High,Police,Yes,Resolved,Child often appears hungry and unwashed. Unconfirmed report.
+777,14.0,Female,Rural,Emotional,High,Parent,Yes,Dismissed,Reports of constant yelling and verbal abuse. Typo heree.
+778,12.0,Female,Suburban,Physical,Medium,Parent,Yes,Ongoing,Seen limping and reluctant to explain. Unclear details.
+779,11.0,Other,Suburban,Emotional,Medium,Neighbor,Yes,Dismissed,Reports of constant yelling and verbal abuse.
+780,2.0,Male,Suburban,Neglect,Medium,Neighbor,Yes,Dismissed,"Repeated absence from school, reported malnutrition. Unclear details."
+781,1.0,Male,Urban,Neglect,High,Neighbor,No,Dismissed,"No supervision at home, child wandering streets. Typo heree."
+782,8.0,Other,Urban,Emotional,Medium,Teacher,Yes,Dismissed,Low self-esteem observed by teacher. Unconfirmed report.
+783,14.0,Male,Rural,Physical,High,Unknown,Yes,Dismissed,Child reported with bruises and scars.
+784,9.0,Female,Rural,Emotional,High,Police,Yes,Resolved,Reports of constant yelling and verbal abuse. Unconfirmed report.
+785,2.0,Other,Suburban,Physical,Medium,Police,Yes,Resolved,Seen limping and reluctant to explain. Typo heree.
+786,5.0,Other,Suburban,Emotional,Low,Police,Yes,Dismissed,Child shows signs of withdrawal and fear.
+787,8.0,Male,Suburban,Neglect,Low,Neighbor,No,Resolved,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+788,16.0,Other,Rural,Sexual,High,Parent,Yes,Ongoing,"Signs of trauma, reported by neighbor. Typo heree."
+789,16.0,Male,Urban,Sexual,Low,Neighbor,No,Dismissed,"Unusual behavior, child refuses to discuss. Typo heree."
+790,13.0,Male,Urban,Physical,High,Police,Yes,Ongoing,"Frequent injuries, parents claim accidental. Unclear details."
+791,15.0,Male,Suburban,Physical,Medium,Neighbor,Yes,Ongoing,Child reported with bruises and scars. Typo heree.
+792,1.0,Male,Suburban,Physical,Medium,Police,Yes,Dismissed,"Frequent injuries, parents claim accidental. Unclear details."
+793,3.0,Male,Suburban,Neglect,High,Other,Yes,Ongoing,Child often appears hungry and unwashed. Unclear details.
+794,6.0,Other,Suburban,Emotional,Medium,Parent,Yes,Ongoing,Child shows signs of withdrawal and fear.
+795,14.0,Female,Rural,Neglect,Medium,Other,Yes,Ongoing,"No supervision at home, child wandering streets."
+796,4.0,Female,Urban,Sexual,Medium,Teacher,No,Dismissed,"Signs of trauma, reported by neighbor."
+797,15.0,Other,Suburban,Physical,Medium,Neighbor,Yes,Dismissed,Seen limping and reluctant to explain. Typo heree.
+798,9.0,Other,Rural,Emotional,Medium,Teacher,No,Ongoing,Low self-esteem observed by teacher. Unclear details.
+799,3.0,Female,Suburban,Sexual,Low,Neighbor,Yes,Dismissed,"Signs of trauma, reported by neighbor. Unconfirmed report."
+800,10.0,Female,Suburban,Sexual,High,Other,No,Dismissed,"Unusual behavior, child refuses to discuss. Unclear details."
+801,17.0,Female,Urban,Sexual,High,Police,No,Ongoing,"Unusual behavior, child refuses to discuss. Unclear details."
+802,7.0,Female,Suburban,Neglect,Medium,Police,Yes,Dismissed,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+803,15.0,Female,Urban,Physical,Medium,Neighbor,No,Resolved,Child reported with bruises and scars. Unconfirmed report.
+804,1.0,Male,Urban,Sexual,Medium,Police,Yes,Dismissed,Inappropriate comments made by caregiver. Unclear details.
+805,11.0,Other,Urban,Physical,Medium,Other,No,Resolved,"Frequent injuries, parents claim accidental. Typo heree."
+806,17.0,Male,Rural,Neglect,High,Police,Yes,Ongoing,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+807,5.0,Female,Rural,Sexual,Low,Other,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Unclear details."
+808,7.0,Female,Urban,Neglect,Low,Teacher,No,Ongoing,"No supervision at home, child wandering streets. Unconfirmed report."
+809,15.0,Female,Suburban,Neglect,Medium,Other,Yes,Ongoing,Child often appears hungry and unwashed. Typo heree.
+810,3.0,Male,Urban,Physical,Medium,Parent,Yes,Ongoing,Seen limping and reluctant to explain. Unconfirmed report.
+811,15.0,Male,Suburban,Sexual,Medium,Parent,No,Ongoing,Inappropriate comments made by caregiver. Typo heree.
+812,5.0,Female,Urban,Neglect,Medium,Parent,Yes,Ongoing,"No supervision at home, child wandering streets. Unconfirmed report."
+813,12.0,Male,Suburban,Sexual,Medium,Neighbor,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Unclear details."
+814,5.0,Male,Rural,Physical,Medium,Neighbor,Yes,Resolved,Seen limping and reluctant to explain. Unclear details.
+815,3.0,Female,Suburban,Neglect,Low,Neighbor,Yes,Dismissed,"No supervision at home, child wandering streets."
+816,9.0,Male,Urban,Physical,Medium,Other,No,Dismissed,Seen limping and reluctant to explain. Unconfirmed report.
+817,9.0,Other,Rural,Sexual,Low,Neighbor,Yes,Dismissed,Inappropriate comments made by caregiver.
+818,7.0,Other,Suburban,Sexual,Low,Teacher,Yes,Dismissed,"Signs of trauma, reported by neighbor."
+819,2.0,Other,Suburban,Physical,Medium,Parent,Yes,Resolved,"Frequent injuries, parents claim accidental."
+820,16.0,Other,Suburban,Emotional,Low,Other,No,Dismissed,Child shows signs of withdrawal and fear. Typo heree.
+821,9.0,Female,Suburban,Neglect,Low,Parent,Yes,Ongoing,"No supervision at home, child wandering streets. Unclear details."
+822,13.0,Female,Suburban,Sexual,Low,Neighbor,Yes,Dismissed,Inappropriate comments made by caregiver.
+823,17.0,Female,Rural,Sexual,High,Other,No,Dismissed,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+824,6.0,Other,Rural,Neglect,High,Police,Yes,Resolved,"No supervision at home, child wandering streets."
+825,4.0,Other,Rural,Physical,Medium,Teacher,Yes,Resolved,"Frequent injuries, parents claim accidental."
+826,1.0,Male,Rural,Physical,High,Neighbor,Yes,Ongoing,"Frequent injuries, parents claim accidental. Typo heree."
+827,9.0,Male,Urban,Physical,Medium,Neighbor,Yes,Dismissed,Child reported with bruises and scars. Unconfirmed report.
+828,13.0,Other,Rural,Emotional,Medium,Teacher,Yes,Dismissed,Child shows signs of withdrawal and fear. Typo heree.
+829,8.0,Other,Suburban,Emotional,Low,Teacher,Yes,Dismissed,Child shows signs of withdrawal and fear.
+830,13.0,Other,Suburban,Sexual,Medium,Police,No,Ongoing,Inappropriate comments made by caregiver.
+831,15.0,Other,Rural,Physical,Medium,Neighbor,Yes,Resolved,Seen limping and reluctant to explain. Typo heree.
+832,11.0,Male,Suburban,Neglect,Medium,Neighbor,No,Ongoing,Child often appears hungry and unwashed. Unclear details.
+833,12.0,Other,Rural,Sexual,Medium,Parent,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Typo heree."
+834,14.0,Male,Suburban,Neglect,Medium,Other,No,Resolved,"No supervision at home, child wandering streets. Unclear details."
+835,4.0,Other,Urban,Sexual,Medium,Other,No,Resolved,"Signs of trauma, reported by neighbor. Unconfirmed report."
+836,1.0,Other,Urban,Emotional,High,Parent,Yes,Ongoing,Reports of constant yelling and verbal abuse.
+837,4.0,Other,Rural,Sexual,Medium,Other,Yes,Resolved,"Unusual behavior, child refuses to discuss."
+838,9.0,Male,Rural,Emotional,Medium,Teacher,Yes,Resolved,Reports of constant yelling and verbal abuse. Unclear details.
+839,10.0,Male,Rural,Sexual,Medium,Other,No,Dismissed,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+840,4.0,Female,Suburban,Physical,Medium,Other,No,Dismissed,Child reported with bruises and scars. Typo heree.
+841,9.0,Other,Rural,Neglect,Medium,Parent,Yes,Resolved,Child often appears hungry and unwashed. Typo heree.
+842,13.0,Female,Urban,Physical,Low,Police,Yes,Resolved,Child reported with bruises and scars.
+843,12.0,Female,Suburban,Sexual,Medium,Other,Yes,Ongoing,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+844,11.0,Male,Rural,Sexual,Low,Other,No,Ongoing,"Signs of trauma, reported by neighbor. Unconfirmed report."
+845,12.0,Male,Suburban,Sexual,Medium,Police,Yes,Resolved,"Unusual behavior, child refuses to discuss."
+846,12.0,Female,Suburban,Emotional,Medium,Parent,Yes,Dismissed,Reports of constant yelling and verbal abuse.
+847,16.0,Other,Rural,Neglect,Medium,Police,Yes,Resolved,"Repeated absence from school, reported malnutrition. Unclear details."
+848,5.0,Male,Suburban,Neglect,Low,Parent,Yes,Resolved,"Repeated absence from school, reported malnutrition. Unclear details."
+849,12.0,Other,Urban,Sexual,Medium,Teacher,No,Dismissed,Inappropriate comments made by caregiver. Unconfirmed report.
+850,11.0,Other,Urban,Sexual,Low,Parent,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Typo heree."
+851,9.0,Female,Suburban,Emotional,High,Teacher,Yes,Ongoing,Child shows signs of withdrawal and fear. Unconfirmed report.
+852,3.0,Female,Rural,Physical,High,Teacher,Yes,Ongoing,Child reported with bruises and scars.
+853,17.0,Female,Suburban,Physical,High,Parent,Yes,Ongoing,Seen limping and reluctant to explain. Typo heree.
+854,14.0,Female,Urban,Neglect,Medium,Neighbor,Yes,Ongoing,Child often appears hungry and unwashed.
+855,1.0,Male,Suburban,Emotional,Medium,Parent,No,Dismissed,Reports of constant yelling and verbal abuse. Unconfirmed report.
+856,17.0,Male,Suburban,Sexual,Low,Other,No,Resolved,"Unusual behavior, child refuses to discuss. Unconfirmed report."
+857,8.0,Female,Urban,Neglect,Medium,Other,Yes,Ongoing,"No supervision at home, child wandering streets. Typo heree."
+858,5.0,Male,Suburban,Emotional,Medium,Neighbor,Yes,Ongoing,Low self-esteem observed by teacher.
+859,5.0,Female,Suburban,Physical,Medium,Teacher,No,Dismissed,"Frequent injuries, parents claim accidental."
+860,9.0,Other,Rural,Emotional,High,Neighbor,Yes,Dismissed,Reports of constant yelling and verbal abuse. Unclear details.
+861,3.0,Other,Rural,Physical,Low,Other,Yes,Resolved,Seen limping and reluctant to explain.
+862,9.0,Other,Urban,Emotional,High,Neighbor,No,Resolved,Low self-esteem observed by teacher. Typo heree.
+863,16.0,Female,Urban,Neglect,Medium,Parent,No,Dismissed,Child often appears hungry and unwashed.
+864,1.0,Other,Urban,Physical,Medium,Neighbor,No,Ongoing,"Frequent injuries, parents claim accidental. Typo heree."
+865,2.0,Male,Rural,Neglect,Low,Teacher,No,Ongoing,"Repeated absence from school, reported malnutrition. Unclear details."
+866,14.0,Other,Urban,Neglect,Low,Parent,No,Ongoing,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+867,14.0,Other,Urban,Physical,Medium,Police,Yes,Resolved,Seen limping and reluctant to explain. Unconfirmed report.
+868,1.0,Other,Urban,Physical,Medium,Other,Yes,Ongoing,Seen limping and reluctant to explain. Unclear details.
+869,16.0,Male,Rural,Sexual,Low,Other,Yes,Ongoing,"Unusual behavior, child refuses to discuss."
+870,15.0,Female,Suburban,Sexual,Medium,Neighbor,Yes,Dismissed,"Signs of trauma, reported by neighbor. Unconfirmed report."
+871,15.0,Male,Urban,Sexual,High,Parent,Yes,Ongoing,"Unusual behavior, child refuses to discuss. Typo heree."
+872,12.0,Female,Suburban,Neglect,High,Police,Yes,Dismissed,Child often appears hungry and unwashed.
+873,16.0,Female,Urban,Neglect,High,Parent,Yes,Ongoing,Child often appears hungry and unwashed.
+874,14.0,Other,Suburban,Sexual,Medium,Other,Yes,Resolved,Inappropriate comments made by caregiver. Typo heree.
+875,15.0,Female,Rural,Neglect,Medium,Parent,Yes,Ongoing,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+876,15.0,Male,Rural,Neglect,Medium,Police,Yes,Ongoing,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+877,8.0,Male,Urban,Physical,Medium,Neighbor,Yes,Dismissed,"Frequent injuries, parents claim accidental."
+878,2.0,Female,Suburban,Physical,Low,Teacher,No,Dismissed,Seen limping and reluctant to explain. Unclear details.
+879,2.0,Other,Rural,Neglect,Low,Parent,Yes,Dismissed,"No supervision at home, child wandering streets. Typo heree."
+880,10.0,Other,Urban,Sexual,Medium,Teacher,Yes,Ongoing,"Unusual behavior, child refuses to discuss. Typo heree."
+881,3.0,Male,Urban,Emotional,Low,Other,No,Ongoing,Reports of constant yelling and verbal abuse.
+882,17.0,Other,Rural,Sexual,Medium,Neighbor,Yes,Resolved,Inappropriate comments made by caregiver. Unconfirmed report.
+883,8.0,Female,Rural,Emotional,Low,Neighbor,Yes,Ongoing,Reports of constant yelling and verbal abuse. Unconfirmed report.
+884,4.0,Female,Urban,Sexual,Low,Parent,Yes,Resolved,Inappropriate comments made by caregiver. Typo heree.
+885,14.0,Male,Suburban,Physical,Medium,Neighbor,Yes,Dismissed,Child reported with bruises and scars. Unconfirmed report.
+886,10.0,Female,Suburban,Neglect,Medium,Parent,No,Dismissed,"Repeated absence from school, reported malnutrition. Unconfirmed report."
+887,1.0,Male,Suburban,Neglect,Medium,Parent,Yes,Dismissed,"No supervision at home, child wandering streets. Typo heree."
+888,4.0,Female,Urban,Physical,Low,Teacher,Yes,Resolved,Child reported with bruises and scars. Unconfirmed report.
+889,1.0,Male,Rural,Emotional,Low,Neighbor,Yes,Ongoing,Child shows signs of withdrawal and fear. Unconfirmed report.
+890,17.0,Other,Urban,Emotional,Medium,Parent,Yes,Dismissed,Low self-esteem observed by teacher. Unclear details.
+891,17.0,Female,Rural,Emotional,Medium,Teacher,Yes,Ongoing,Low self-esteem observed by teacher. Typo heree.
+892,7.0,Female,Suburban,Physical,Medium,Police,Yes,Ongoing,"Frequent injuries, parents claim accidental."
+893,15.0,Male,Suburban,Emotional,Medium,Teacher,Yes,Dismissed,Child shows signs of withdrawal and fear. Typo heree.
+894,13.0,Male,Rural,Physical,High,Teacher,Yes,Resolved,Seen limping and reluctant to explain. Typo heree.
+895,2.0,Female,Rural,Sexual,Medium,Parent,Yes,Ongoing,Inappropriate comments made by caregiver. Unconfirmed report.
+896,13.0,Male,Urban,Sexual,Medium,Other,Yes,Dismissed,"Signs of trauma, reported by neighbor. Unconfirmed report."
+897,11.0,Female,Suburban,Physical,Medium,Other,Yes,Ongoing,Child reported with bruises and scars. Unconfirmed report.
+898,15.0,Other,Urban,Neglect,Medium,Other,No,Ongoing,"No supervision at home, child wandering streets. Unconfirmed report."
+899,10.0,Male,Urban,Sexual,Medium,Teacher,Yes,Ongoing,"Unusual behavior, child refuses to discuss. Typo heree."
+900,9.0,Female,Urban,Emotional,Medium,Parent,Yes,Ongoing,Low self-esteem observed by teacher. Unconfirmed report.
+901,9.0,Other,Suburban,Physical,Medium,Neighbor,Yes,Ongoing,"Frequent injuries, parents claim accidental."
+902,1.0,Other,Urban,Emotional,Low,Teacher,Yes,Resolved,Child shows signs of withdrawal and fear. Unconfirmed report.
+903,17.0,Female,Urban,Emotional,Low,Teacher,No,Resolved,Reports of constant yelling and verbal abuse. Unclear details.
+904,12.0,Male,Urban,Neglect,Medium,Parent,Yes,Dismissed,Child often appears hungry and unwashed. Unclear details.
+905,10.0,Female,Urban,Emotional,High,Police,No,Resolved,Low self-esteem observed by teacher. Unconfirmed report.
+906,5.0,Other,Urban,Neglect,Low,Teacher,Yes,Resolved,Child often appears hungry and unwashed. Unclear details.
+907,15.0,Female,Urban,Sexual,High,Police,No,Resolved,"Unusual behavior, child refuses to discuss. Unclear details."
+908,6.0,Male,Suburban,Physical,Medium,Police,Yes,Ongoing,Seen limping and reluctant to explain. Typo heree.
+909,7.0,Other,Urban,Emotional,High,Other,No,Ongoing,Reports of constant yelling and verbal abuse. Unconfirmed report.
+910,17.0,Female,Rural,Physical,High,Parent,Yes,Dismissed,Seen limping and reluctant to explain.
+911,6.0,Male,Urban,Emotional,Medium,Police,Yes,Dismissed,Low self-esteem observed by teacher. Unclear details.
+912,8.0,Other,Urban,Physical,Low,Parent,Yes,Dismissed,Seen limping and reluctant to explain. Unconfirmed report.
+913,12.0,Male,Suburban,Emotional,Low,Other,Yes,Ongoing,Reports of constant yelling and verbal abuse. Typo heree.
+914,14.0,Other,Suburban,Emotional,Low,Parent,No,Resolved,Reports of constant yelling and verbal abuse.
+915,12.0,Female,Rural,Emotional,Medium,Teacher,Yes,Resolved,Low self-esteem observed by teacher. Unclear details.
+916,10.0,Male,Rural,Emotional,Low,Police,Yes,Ongoing,Low self-esteem observed by teacher. Typo heree.
+917,15.0,Other,Suburban,Emotional,Medium,Parent,Yes,Dismissed,Reports of constant yelling and verbal abuse. Typo heree.
+918,7.0,Male,Suburban,Emotional,Medium,Neighbor,Yes,Dismissed,Low self-esteem observed by teacher. Typo heree.
+919,9.0,Male,Urban,Emotional,High,Parent,Yes,Dismissed,Child shows signs of withdrawal and fear.
+920,10.0,Female,Suburban,Emotional,Low,Police,Yes,Ongoing,Child shows signs of withdrawal and fear. Unclear details.
+921,10.0,Male,Rural,Emotional,Low,Other,Yes,Dismissed,Reports of constant yelling and verbal abuse. Unconfirmed report.
+922,16.0,Other,Urban,Physical,Low,Other,No,Dismissed,Seen limping and reluctant to explain.
+923,7.0,Other,Rural,Neglect,High,Police,Yes,Ongoing,"No supervision at home, child wandering streets. Typo heree."
+924,5.0,Other,Urban,Emotional,Medium,Teacher,Yes,Resolved,Low self-esteem observed by teacher. Unconfirmed report.
+925,3.0,Other,Suburban,Neglect,Low,Teacher,No,Ongoing,Child often appears hungry and unwashed. Typo heree.
+926,11.0,Female,Rural,Emotional,Low,Other,Yes,Ongoing,Low self-esteem observed by teacher. Unconfirmed report.
+927,15.0,Male,Urban,Emotional,Low,Other,Yes,Ongoing,Child shows signs of withdrawal and fear.
+928,5.0,Female,Urban,Physical,Low,Police,Yes,Ongoing,Child reported with bruises and scars.
+929,12.0,Male,Suburban,Sexual,High,Teacher,Yes,Resolved,Inappropriate comments made by caregiver. Unclear details.
+930,4.0,Male,Suburban,Sexual,Medium,Other,Yes,Dismissed,"Signs of trauma, reported by neighbor. Unconfirmed report."
+931,15.0,Male,Suburban,Physical,Medium,Teacher,No,Ongoing,Child reported with bruises and scars. Typo heree.
+932,9.0,Female,Rural,Neglect,High,Other,Yes,Resolved,"Repeated absence from school, reported malnutrition. Typo heree."
+933,7.0,Male,Urban,Sexual,Low,Parent,Yes,Dismissed,"Signs of trauma, reported by neighbor."
+934,10.0,Female,Suburban,Physical,Medium,Neighbor,No,Dismissed,Seen limping and reluctant to explain. Typo heree.
+935,13.0,Other,Rural,Physical,High,Parent,No,Dismissed,"Frequent injuries, parents claim accidental. Unclear details."
+936,8.0,Other,Rural,Sexual,Medium,Other,Yes,Ongoing,"Signs of trauma, reported by neighbor. Unclear details."
+937,12.0,Male,Rural,Neglect,Medium,Neighbor,Yes,Ongoing,"No supervision at home, child wandering streets. Unclear details."
+938,1.0,Female,Suburban,Physical,Low,Neighbor,Yes,Dismissed,Child reported with bruises and scars. Unclear details.
+939,16.0,Other,Suburban,Emotional,Low,Other,No,Dismissed,Child shows signs of withdrawal and fear. Unclear details.
+940,17.0,Female,Urban,Neglect,Low,Other,No,Dismissed,"No supervision at home, child wandering streets."
+941,11.0,Female,Urban,Neglect,Medium,Teacher,Yes,Dismissed,"No supervision at home, child wandering streets. Typo heree."
+942,7.0,Male,Suburban,Sexual,Medium,Other,Yes,Dismissed,Inappropriate comments made by caregiver. Unclear details.
+943,8.0,Other,Rural,Sexual,High,Police,Yes,Dismissed,"Signs of trauma, reported by neighbor."
+944,6.0,Male,Rural,Emotional,Medium,Other,No,Resolved,Child shows signs of withdrawal and fear. Typo heree.
+945,7.0,Male,Rural,Physical,High,Police,Yes,Dismissed,"Frequent injuries, parents claim accidental. Unconfirmed report."
+946,10.0,Other,Urban,Sexual,High,Other,Yes,Ongoing,"Signs of trauma, reported by neighbor. Unconfirmed report."
+947,11.0,Other,Rural,Sexual,Low,Teacher,No,Ongoing,Inappropriate comments made by caregiver.
+948,13.0,Female,Urban,Neglect,Medium,Police,Yes,Ongoing,Child often appears hungry and unwashed. Typo heree.
+949,9.0,Other,Urban,Sexual,Low,Parent,Yes,Dismissed,"Signs of trauma, reported by neighbor."
+950,7.0,Female,Rural,Sexual,Medium,Police,Yes,Ongoing,Inappropriate comments made by caregiver. Unconfirmed report.
+951,9.0,Female,Rural,Sexual,High,Teacher,Yes,Resolved,"Signs of trauma, reported by neighbor. Typo heree."
+952,13.0,Female,Suburban,Sexual,Low,Police,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Unclear details."
+953,3.0,Other,Suburban,Neglect,Medium,Other,Yes,Ongoing,Child often appears hungry and unwashed. Unconfirmed report.
+954,3.0,Male,Rural,Emotional,Medium,Other,Yes,Resolved,Low self-esteem observed by teacher.
+955,1.0,Female,Urban,Emotional,Medium,Teacher,No,Resolved,Child shows signs of withdrawal and fear. Unclear details.
+956,2.0,Male,Urban,Physical,Medium,Neighbor,Yes,Ongoing,"Frequent injuries, parents claim accidental. Unclear details."
+957,3.0,Male,Urban,Sexual,Medium,Other,Yes,Resolved,"Unusual behavior, child refuses to discuss. Typo heree."
+958,15.0,Other,Urban,Neglect,Low,Parent,Yes,Ongoing,"Repeated absence from school, reported malnutrition. Unclear details."
+959,6.0,Male,Urban,Physical,Low,Teacher,No,Resolved,"Frequent injuries, parents claim accidental. Typo heree."
+960,13.0,Male,Suburban,Physical,Low,Police,No,Dismissed,Child reported with bruises and scars. Typo heree.
+961,1.0,Other,Rural,Emotional,Medium,Police,Yes,Dismissed,Child shows signs of withdrawal and fear. Typo heree.
+962,1.0,Female,Suburban,Neglect,Low,Parent,Yes,Dismissed,Child often appears hungry and unwashed. Typo heree.
+963,2.0,Male,Urban,Neglect,High,Other,Yes,Dismissed,"Repeated absence from school, reported malnutrition."
+964,15.0,Other,Urban,Neglect,Medium,Teacher,Yes,Dismissed,"Repeated absence from school, reported malnutrition. Unclear details."
+965,14.0,Male,Urban,Emotional,Medium,Parent,Yes,Ongoing,Low self-esteem observed by teacher. Unclear details.
+966,11.0,Male,Urban,Emotional,Medium,Other,No,Dismissed,Child shows signs of withdrawal and fear. Typo heree.
+967,15.0,Female,Rural,Emotional,Medium,Teacher,No,Dismissed,Low self-esteem observed by teacher.
+968,6.0,Male,Urban,Emotional,High,Police,Yes,Dismissed,Child shows signs of withdrawal and fear.
+969,9.0,Other,Rural,Emotional,Low,Teacher,No,Dismissed,Child shows signs of withdrawal and fear. Typo heree.
+970,5.0,Male,Urban,Sexual,Low,Neighbor,No,Resolved,"Signs of trauma, reported by neighbor. Unclear details."
+971,2.0,Female,Rural,Sexual,Medium,Teacher,Yes,Dismissed,"Signs of trauma, reported by neighbor. Unconfirmed report."
+972,6.0,Female,Suburban,Neglect,Low,Neighbor,Yes,Dismissed,"Repeated absence from school, reported malnutrition."
+973,9.0,Other,Urban,Physical,Low,Teacher,No,Ongoing,"Frequent injuries, parents claim accidental. Typo heree."
+974,6.0,Female,Rural,Neglect,Medium,Neighbor,Yes,Resolved,"Repeated absence from school, reported malnutrition. Typo heree."
+975,14.0,Male,Suburban,Physical,Low,Police,No,Ongoing,"Frequent injuries, parents claim accidental. Unclear details."
+976,13.0,Female,Urban,Emotional,Medium,Other,No,Dismissed,Low self-esteem observed by teacher. Unconfirmed report.
+977,11.0,Other,Urban,Physical,Low,Neighbor,Yes,Ongoing,"Frequent injuries, parents claim accidental. Unconfirmed report."
+978,12.0,Female,Urban,Neglect,High,Neighbor,No,Ongoing,Child often appears hungry and unwashed.
+979,13.0,Female,Rural,Neglect,Medium,Police,No,Dismissed,Child often appears hungry and unwashed. Unconfirmed report.
+980,14.0,Female,Rural,Physical,Medium,Neighbor,Yes,Resolved,"Frequent injuries, parents claim accidental. Unconfirmed report."
+981,12.0,Other,Suburban,Sexual,Medium,Parent,Yes,Resolved,Inappropriate comments made by caregiver. Unclear details.
+982,4.0,Female,Rural,Emotional,High,Police,Yes,Ongoing,Reports of constant yelling and verbal abuse. Unclear details.
+983,10.0,Female,Rural,Emotional,Low,Parent,Yes,Dismissed,Reports of constant yelling and verbal abuse. Typo heree.
+984,17.0,Male,Urban,Neglect,High,Police,Yes,Ongoing,"Repeated absence from school, reported malnutrition. Typo heree."
+985,4.0,Other,Urban,Sexual,Medium,Neighbor,Yes,Ongoing,Inappropriate comments made by caregiver. Unclear details.
+986,12.0,Female,Urban,Physical,Medium,Parent,Yes,Ongoing,"Frequent injuries, parents claim accidental."
+987,13.0,Other,Urban,Emotional,Medium,Neighbor,Yes,Dismissed,Reports of constant yelling and verbal abuse. Unclear details.
+988,4.0,Female,Urban,Sexual,Low,Police,No,Dismissed,Inappropriate comments made by caregiver.
+989,10.0,Female,Urban,Emotional,Medium,Neighbor,No,Resolved,Reports of constant yelling and verbal abuse. Unconfirmed report.
+990,3.0,Female,Unknown,Sexual,Medium,Parent,No,Dismissed,"Unusual behavior, child refuses to discuss. Unclear details."
+991,15.0,Male,Suburban,Sexual,Low,Parent,Yes,Ongoing,"Unusual behavior, child refuses to discuss."
+992,2.0,Male,Suburban,Neglect,Medium,Neighbor,No,Ongoing,"No supervision at home, child wandering streets. Unconfirmed report."
+993,17.0,Male,Suburban,Emotional,Low,Teacher,No,Resolved,Low self-esteem observed by teacher. Unconfirmed report.
+994,6.0,Other,Suburban,Physical,Low,Police,Yes,Dismissed,Child reported with bruises and scars. Unclear details.
+995,8.0,Other,Urban,Neglect,Low,Police,Yes,Ongoing,"No supervision at home, child wandering streets. Typo heree."
+996,3.0,Male,Suburban,Neglect,Low,Neighbor,Yes,Resolved,Child often appears hungry and unwashed. Unclear details.
+997,1.0,Other,Urban,Physical,Medium,Teacher,No,Resolved,"Frequent injuries, parents claim accidental. Unconfirmed report."
+998,16.0,Female,Suburban,Neglect,Low,Parent,Yes,Ongoing,"No supervision at home, child wandering streets. Typo heree."
+999,,Female,Rural,Sexual,High,Other,Yes,Ongoing,Inappropriate comments made by caregiver.
+1000,3.0,Female,Suburban,Sexual,Medium,Other,Yes,Dismissed,"Unusual behavior, child refuses to discuss. Unconfirmed report."

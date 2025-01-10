@@ -1,0 +1,9 @@
+streamlit==1.27.2
+rapidfuzz==2.13.0
+spacy==3.7.5
+torch==2.3.0
+transformers==4.28.1
+datasets==2.11.0
+plotly==5.16.0
+cmdstanpy==1.0.4
+requests==2.31.0
