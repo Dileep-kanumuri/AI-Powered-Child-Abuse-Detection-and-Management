@@ -2,7 +2,8 @@ streamlit==1.27.2
 rapidfuzz==2.13.0
 spacy==3.7.5
 torch==2.3.0
-transformers==4.26.1
+transformers==4.30.2
+safetensors==0.3.1
 datasets==2.11.0
 plotly==5.16.0
 cmdstanpy==1.0.4
