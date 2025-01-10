@@ -9,7 +9,7 @@ from prophet import Prophet
 import os
 import requests 
 import spacy
-
+# spacy.cli.download("en_core_web_sm")
 nlp = spacy.load("en_core_web_sm")
 
 
@@ -27,6 +27,7 @@ st.markdown("""
 
     /* Title Section */
     .title-container {
+            
         text-align: center;
         font-size: 2.5rem;
         font-weight: 700;
