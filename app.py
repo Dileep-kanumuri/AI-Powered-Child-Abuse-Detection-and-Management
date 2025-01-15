@@ -9,6 +9,10 @@ from prophet import Prophet
 import os
 import requests 
 import spacy
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
+
 # spacy.cli.download("en_core_web_sm")
 nlp = spacy.load("en_core_web_sm")
 
@@ -93,7 +97,7 @@ def load_data():
     try:
         # Dynamically construct the dataset path
         current_dir = os.path.dirname(os.path.abspath(__file__))
-        csv_path = os.path.join(current_dir, "data", "Final_Dataset_CAPS.csv")
+        csv_path = os.path.join(current_dir, "Final_Dataset_CAPS.csv")
         df = pd.read_csv(csv_path)
         df['Date'] = pd.to_datetime(df['Date'])  # Ensure Date is in datetime format
 
@@ -101,9 +105,9 @@ def load_data():
         required_columns = {
             "Case Outcome": "Ongoing",
             "Notes": "",
-            "Confidence Score": 0.0,
+#             "Confidence Score": 0.0,
             "Flagged": False,
-            "Case Status": "Ongoing",
+#             "Case Status": "Ongoing",
             "Assigned Investigator": "Unassigned",
         }
 
@@ -130,7 +134,8 @@ def load_model():
 
 # --------------------------------------------------------
 # 3) FILTERING FUNCTION
-# --------------------------------------------------------
+# -------------------------------------------------------
+
 def exact_filter(df, query, column):
     query = query.strip()
     if query == "":
@@ -154,6 +159,22 @@ def exact_filter(df, query, column):
 
     return exact_matches
 
+
+def find_similar_cases(description, df):
+    if "Case Description" not in df.columns:
+        st.error("The dataset does not contain a 'Case Description' column.")
+        return pd.DataFrame()
+
+    tfidf_vectorizer = TfidfVectorizer()
+    case_descriptions = df["Case Description"].fillna("").tolist()
+    tfidf_matrix = tfidf_vectorizer.fit_transform(case_descriptions)
+
+    query_vector = tfidf_vectorizer.transform([description])
+    cosine_similarities = cosine_similarity(query_vector, tfidf_matrix).flatten()
+
+    df["Similarity"] = cosine_similarities
+    similar_cases = df.sort_values(by="Similarity", ascending=False).head(5)
+    return similar_cases
 
 
 # --------------------------------------------------------
@@ -191,6 +212,8 @@ def auto_flag_logic(df, classifier):
 
     return df
 
+
+
 # --------------------------------------------------------
 # 6) PREPARE DATA FOR FORECASTING
 # --------------------------------------------------------
@@ -227,8 +250,7 @@ def main():
 
     # Sidebar Navigation
     st.sidebar.title("Navigation")
-    page = st.sidebar.radio(
-        "Go to:", ["Home", "Predict Abuse Type", "Auto-Flagging Logic", "Case Management", "Visualizations", "Forecasting"]
+    page = st.sidebar.radio("Go to:", ["Home", "Predict Abuse Type", "Auto-Flagging Logic", "Similar Case Discovery","Case Management", "Visualizations", "Forecasting"]
     )
 
     # Home Page
@@ -241,9 +263,10 @@ def main():
         if search_query.strip() == "" or search_column not in df.columns:
             filtered_df = df
         else:
-            filtered_df = df[df[search_column].astype(str).str.contains(search_query, case=False, na=False)]
+            filtered_df = exact_filter(df, search_query, search_column)
         st.subheader(f"Filtered Data ({len(filtered_df)} results)")
         st.dataframe(filtered_df)
+
 
     # Predict Abuse Type
     elif page == "Predict Abuse Type":
@@ -272,53 +295,94 @@ def main():
                 st.dataframe(flagged_cases)
 
                 # Save the updated DataFrame
-                csv_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "Final_Dataset_CAPS.csv")
+#                 csv_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),  "Final_Dataset_CAPS.csv")
+                csv_path = os.path.join(os.getcwd(), "Final_Dataset_CAPS.csv")
                 df.to_csv(csv_path, index=False)
                 st.success("Updated flagged cases have been saved.")
             except Exception as e:
                 st.error(f"Error running auto-flagging logic: {e}")
 
     # Case Management
+#     elif page == "Case Management":
+#         st.title("Case Management")
+#         st.write("View, update, and manage case details.")
+        
+#         case_id_to_edit = st.text_input("Enter Case ID to edit:", "")
+#         if case_id_to_edit:
+#             case_data = df[df["Child ID"].astype(str) == case_id_to_edit]
+#             if not case_data.empty:
+#                 st.write("Case Details:")
+#                 st.dataframe(case_data)
+
+#                 # Editable fields
+#                 new_status = st.selectbox(
+#                     "Update Case Outcome:", ["Ongoing", "Resolved", "Closed", "Dismissed"],
+#                     index=["Ongoing", "Resolved", "Closed", "Dismissed"].index(case_data["Case Outcome"].values[0])
+#                 )
+#                 new_notes = st.text_area("Update Notes:", value=case_data["Notes"].values[0])
+#                 new_investigator = st.text_input("Update Assigned Investigator:", value=case_data["Assigned Investigator"].values[0])
+                
+#                 if st.button("Save Changes"):
+#                     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+#                     if new_notes.strip():
+#                         updated_notes = f"{case_data['Notes'].values[0]}\n{new_notes} (Updated on: {timestamp})"
+#                     else:
+#                         updated_notes = case_data["Notes"].values[0]
+
+#                     # Update the DataFrame
+#                     df.loc[df["Child ID"].astype(str) == case_id_to_edit, "Case Outcome"] = new_status
+#                     df.loc[df["Child ID"].astype(str) == case_id_to_edit, "Notes"] = updated_notes
+#                     df.loc[df["Child ID"].astype(str) == case_id_to_edit, "Assigned Investigator"] = new_investigator
+                    
+#                     # Save the updated DataFrame
+#                     try:
+# #                         csv_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Final_Dataset_CAPS.csv")
+#                         csv_path = os.path.join(os.getcwd(), "Final_Dataset_CAPS.csv")
+#                         df.to_csv(csv_path, index=False)
+#                         st.success(f"Changes saved for Case ID {case_id_to_edit}!")
+#                     except Exception as e:
+#                         st.error(f"Error saving changes: {e}")
+#             else:
+#                 st.warning("No case found with the provided Case ID.")
+                
     elif page == "Case Management":
         st.title("Case Management")
         st.write("View, update, and manage case details.")
-        
         case_id_to_edit = st.text_input("Enter Case ID to edit:", "")
         if case_id_to_edit:
             case_data = df[df["Child ID"].astype(str) == case_id_to_edit]
             if not case_data.empty:
                 st.write("Case Details:")
                 st.dataframe(case_data)
-
-                # Editable fields
                 new_status = st.selectbox(
-                    "Update Case Outcome:", ["Ongoing", "Resolved", "Closed", "Dismissed"],
-                    index=["Ongoing", "Resolved", "Closed", "Dismissed"].index(case_data["Case Outcome"].values[0])
+                    "Update Case Outcome:", ["Ongoing", "Resolved", "Closed","Dismissed"],
+                    index=["Ongoing", "Resolved", "Closed","Dismissed"].index(case_data["Case Outcome"].values[0])
                 )
                 new_notes = st.text_area("Update Notes:", value=case_data["Notes"].values[0])
                 new_investigator = st.text_input("Update Assigned Investigator:", value=case_data["Assigned Investigator"].values[0])
-                
                 if st.button("Save Changes"):
                     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                     if new_notes.strip():
                         updated_notes = f"{case_data['Notes'].values[0]}\n{new_notes} (Updated on: {timestamp})"
                     else:
                         updated_notes = case_data["Notes"].values[0]
-
-                    # Update the DataFrame
                     df.loc[df["Child ID"].astype(str) == case_id_to_edit, "Case Outcome"] = new_status
                     df.loc[df["Child ID"].astype(str) == case_id_to_edit, "Notes"] = updated_notes
                     df.loc[df["Child ID"].astype(str) == case_id_to_edit, "Assigned Investigator"] = new_investigator
-                    
-                    # Save the updated DataFrame
                     try:
-                        csv_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "Final_Dataset_CAPS.csv")
+#                         csv_path = "Final_Dataset_CAPS.csv"
+                     
+
+                        csv_path = os.path.join(os.path.dirname(__file__), "Final_Dataset_CAPS.csv")
                         df.to_csv(csv_path, index=False)
+                        load_data.clear()
+                        df = load_data()
                         st.success(f"Changes saved for Case ID {case_id_to_edit}!")
                     except Exception as e:
-                        st.error(f"Error saving changes: {e}")
+                        st.error(f"Failed to save changes: {e}")
             else:
                 st.warning("No case found with the provided Case ID.")
+
 
     # Visualizations
 #     elif page == "Visualizations":
@@ -370,6 +434,553 @@ def main():
             title="Severity Distribution",
         )
         st.plotly_chart(fig3)
+        
+        # Visualization 3: Sankey Diagram
+        st.subheader("Case Flow Visualization (Region → Severity → Outcome)")
+        sankey_data = df.groupby(["Region", "Severity", "Case Outcome"]).size().reset_index(name="Count")
+
+        fig3 = go.Figure(
+            go.Sankey(
+                node=dict(
+                    pad=10,
+                    thickness=20,
+                    line=dict(color="black", width=0.5),
+                    label=list(set(sankey_data["Region"]) | set(sankey_data["Severity"]) | set(sankey_data["Case Outcome"])),
+                ),
+                link=dict(
+                    source=sankey_data["Region"].apply(lambda x: list(sankey_data["Region"]).index(x)),
+                    target=sankey_data["Severity"].apply(lambda x: list(sankey_data["Severity"]).index(x) + len(set(sankey_data["Region"]))),
+                    value=sankey_data["Count"]
+                )
+            )
+        )
+
+        fig3.update_layout(title_text="Flow of Cases (Region → Severity → Outcome)", font_size=10)
+        st.plotly_chart(fig3)
+        
+
+
+
+        # Load your dataset
+#         csv_path = os.path.join(os.path.dirname(__file__), "Final_Dataset_CAPS.csv")
+#         df = pd.read_csv(csv_path)
+
+#         # Ensure county names are standardized (e.g., without " County" suffix)
+#         df["County"] = df["County"].str.replace(" County", "", regex=False)
+
+#         # Aggregate data by county
+#         county_data = df.groupby("County").size().reset_index(name="Case Count")
+
+#         # Load Mississippi county GeoJSON
+#         geojson_url = "https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json"
+
+#         # Filter GeoJSON for Mississippi counties (FIPS codes starting with 28)
+# #         import requests
+#         geojson_data = requests.get(geojson_url).json()
+#         mississippi_geojson = {
+#             "type": "FeatureCollection",
+#             "features": [
+#                 feature for feature in geojson_data["features"] if feature["properties"]["STATE"] == "28"
+#             ]
+#         }
+
+#         # Add a title
+#         st.title("Case Distribution by County in Mississippi")
+
+#         # Create a choropleth map
+#         fig = px.choropleth(
+#             county_data,
+#             geojson=mississippi_geojson,
+#             locations="County",  # Match county names with GeoJSON
+#             featureidkey="properties.NAME",  # Match GeoJSON feature with county names
+#             color="Case Count",  # Color by the number of cases
+#             color_continuous_scale="Viridis",
+#             title="Case Distribution Across Mississippi Counties",
+#         )
+
+#         # Update geographic scope to focus on Mississippi
+#         fig.update_geos(
+#             visible=False,
+#             resolution=50,
+#             projection=dict(type="mercator"),
+#             center=dict(lat=32.7765, lon=-89.6678),  # Mississippi center coordinates
+#             fitbounds="locations",
+#         )
+
+#         # Display the map in Streamlit
+#         st.plotly_chart(fig)
+
+        # Ensure county names are standardized (remove " County" suffix)
+#         df["County"] = df["County"].str.replace(" County", "", regex=False)
+
+#         # Aggregate data by county
+#         county_data = df.groupby("County").size().reset_index(name="Case Count")
+
+#         # Load Mississippi county GeoJSON
+#         geojson_url = "https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json"
+#         geojson_data = requests.get(geojson_url).json()
+
+#         # Filter GeoJSON for Mississippi counties (FIPS codes starting with 28)
+#         mississippi_geojson = {
+#             "type": "FeatureCollection",
+#             "features": [
+#                 feature for feature in geojson_data["features"] if feature["properties"]["STATE"] == "28"
+#             ]
+#         }
+
+#         # Create a list of all counties in Mississippi
+#         mississippi_counties = [feature["properties"]["NAME"] for feature in mississippi_geojson["features"]]
+
+#         # Add counties with zero cases to the dataset to ensure all counties are displayed
+#         for county in mississippi_counties:
+#             if county not in county_data["County"].values:
+#                 county_data = pd.concat([county_data, pd.DataFrame({"County": [county], "Case Count": [0]})])
+
+#         # Create a choropleth map
+#         fig = px.choropleth(
+#             county_data,
+#             geojson=mississippi_geojson,
+#             locations="County",  # Match county names with GeoJSON
+#             featureidkey="properties.NAME",  # Match GeoJSON feature with county names
+#             color="Case Count",  # Color based on case count
+#             color_continuous_scale="Viridis",
+#             title="Case Distribution Across Mississippi Counties",
+#             labels={"Case Count": "Number of Cases"},
+#         )
+
+#         # Update geographic scope to focus on Mississippi
+#         fig.update_geos(
+#             visible=False,
+#             resolution=50,
+#             projection=dict(type="mercator"),
+#             center=dict(lat=32.7765, lon=-89.6678),  # Mississippi center coordinates
+#             fitbounds="locations",
+#         )
+#         csv_path = os.path.join(os.path.dirname(__file__), "Final_Dataset_CAPS.csv")
+#         df = pd.read_csv(csv_path)
+
+#         # Ensure county names are standardized (remove " County" suffix)
+#         df["County"] = df["County"].str.replace(" County", "", regex=False)
+
+#         # Aggregate data by county
+#         county_data = df.groupby("County").size().reset_index(name="Case Count")
+
+#         # Load Mississippi county GeoJSON
+#         geojson_url = "https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json"
+#         geojson_data = requests.get(geojson_url).json()
+
+#         # Filter GeoJSON for Mississippi counties (FIPS codes starting with 28)
+#         mississippi_geojson = {
+#             "type": "FeatureCollection",
+#             "features": [
+#                 feature for feature in geojson_data["features"] if feature["properties"]["STATE"] == "28"
+#             ]
+#         }
+
+#         # Create a list of all counties in Mississippi
+#         mississippi_counties = [feature["properties"]["NAME"] for feature in mississippi_geojson["features"]]
+
+#         # Add counties with zero cases to the dataset to ensure all counties are displayed
+#         for county in mississippi_counties:
+#             if county not in county_data["County"].values:
+#                 county_data = pd.concat([county_data, pd.DataFrame({"County": [county], "Case Count": [0]})])
+
+#         # Choropleth Map
+#         fig_choropleth = px.choropleth(
+#             county_data,
+#             geojson=mississippi_geojson,
+#             locations="County",  # Match county names with GeoJSON
+#             featureidkey="properties.NAME",  # Match GeoJSON feature with county names
+#             color="Case Count",  # Color based on case count
+#             color_continuous_scale="Viridis",
+#             title="Case Distribution Across Mississippi Counties",
+#             labels={"Case Count": "Number of Cases"},
+#         )
+
+#         # Update geographic scope to focus on Mississippi
+#         fig_choropleth.update_geos(
+#             visible=False,
+#             resolution=50,
+#             projection=dict(type="mercator"),
+#             center=dict(lat=32.7765, lon=-89.6678),  # Mississippi center coordinates
+#             fitbounds="locations",
+#         )
+
+#         # Bubble Map Data Preparation
+#         bubble_data = df.groupby(["County"]).agg({"Severity": "count"}).reset_index()
+#         bubble_data.columns = ["County", "Bubble Size"]
+
+#         # Bubble Map
+#         fig_bubble = px.scatter_geo(
+#             bubble_data,
+#             geojson=mississippi_geojson,
+#             locations="County",
+#             featureidkey="properties.NAME",
+#             size="Bubble Size",
+#             color="Bubble Size",
+#             color_continuous_scale="Plasma",
+#             title="Bubble Map of Severity Across Counties",
+#             labels={"Bubble Size": "Severity Count"},
+#         )
+
+#         # Update Bubble Map to align with Mississippi focus
+#         fig_bubble.update_geos(
+#             visible=False,
+#             resolution=50,
+#             projection=dict(type="mercator"),
+#             center=dict(lat=32.7765, lon=-89.6678),  # Mississippi center coordinates
+#             fitbounds="locations",
+#         )
+
+#         # Display Both Maps in Streamlit
+#         st.title("Integrated Visualization for Mississippi Case Distribution")
+#         st.subheader("Choropleth Map: Case Distribution")
+#         st.plotly_chart(fig_choropleth)
+
+#         st.subheader("Bubble Map: Case Severity Across Counties")
+#         st.plotly_chart(fig_bubble)
+
+    
+
+#         # Display the map in Streamlit
+#         st.title("Case Distribution by County in Mississippi")
+#         st.plotly_chart(fig)
+#         st.subheader("Trend Over Time by County")
+
+#         # Prepare data for time trend visualization
+#         time_trend_data = df.groupby(["Date", "County"]).size().reset_index(name="Case Count")
+
+#         # Create a line chart
+#         fig_time = px.line(
+#             time_trend_data,
+#             x="Date",
+#             y="Case Count",
+#             color="County",
+#             title="Case Trends Over Time by County",
+#             labels={"Case Count": "Number of Cases"}
+#         )
+
+#         # Display chart in Streamlit
+#         st.plotly_chart(fig_time)
+        
+        
+#         csv_path = os.path.join(os.path.dirname(__file__), "Final_Dataset_CAPS.csv")
+#         df = pd.read_csv(csv_path)        
+        
+#         # Ensure county names are standardized (remove " County" suffix)
+#         df["County"] = df["County"].str.replace(" County", "", regex=False)
+
+#         # Aggregate data by county
+#         bubble_data = df.groupby(["County"]).size().reset_index(name="Case Count")
+
+#         # Load Mississippi county GeoJSON
+#         geojson_url = "https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json"
+#         geojson_data = requests.get(geojson_url).json()
+
+#         # Filter GeoJSON for Mississippi counties (FIPS codes starting with 28)
+#         mississippi_geojson = {
+#             "type": "FeatureCollection",
+#             "features": [
+#                 feature for feature in geojson_data["features"] if feature["properties"]["STATE"] == "28"
+#             ]
+#         }
+
+#         # Bubble Map with Mississippi Counties
+#         fig = px.scatter_geo(
+#             bubble_data,
+#             geojson=mississippi_geojson,
+#             locations="County",
+#             featureidkey="properties.NAME",
+#             size="Case Count",
+#             color="Case Count",
+#             color_continuous_scale="Viridis",
+#             title="Bubble Map: Case Distribution Across Mississippi Counties",
+#         )
+
+#         # Update the map's focus to Mississippi
+#         fig.update_geos(
+#             visible=False,
+#             resolution=50,
+#             projection=dict(type="mercator"),
+#             center=dict(lat=32.7765, lon=-89.6678),  # Mississippi's center coordinates
+#             fitbounds="locations",
+#         )
+
+#         # Display the map in Streamlit
+#         st.title("Bubble Map: Case Distribution in Mississippi")
+#         st.plotly_chart(fig)
+       
+
+        county_coordinates = {
+    'Adams': {'lat': 31.4904067, 'lon': -91.3297733},
+    'Alcorn': {'lat': 34.8734817, 'lon': -88.5667345},
+    'Amite': {'lat': 31.1729865, 'lon': -90.8217568},
+    'Attala': {'lat': 33.0777868, 'lon': -89.5680661},
+    'Benton': {'lat': 34.8277278, 'lon': -89.1960486},
+    'Bolivar': {'lat': 33.7702263, 'lon': -90.8519798},
+    'Calhoun': {'lat': 33.9253624, 'lon': -89.3231269},
+    'Carroll': {'lat': 33.4230182, 'lon': -89.9110025},
+    'Chickasaw': {'lat': 33.9137474, 'lon': -88.9357382},
+    'Choctaw': {'lat': 33.3569348, 'lon': -89.2390212},
+    'Claiborne': {'lat': 31.9640367, 'lon': -90.9141968},
+    'Clarke': {'lat': 32.0396256, 'lon': -88.7003965},
+    'Clay': {'lat': 33.6393012, 'lon': -88.7957063},
+    'Coahoma': {'lat': 34.1931314, 'lon': -90.5653906},
+    'Copiah': {'lat': 31.8563532, 'lon': -90.4798717},
+    'Covington': {'lat': 31.6143213, 'lon': -89.5278045},
+    'DeSoto': {'lat': 34.8702932, 'lon': -89.9778704},
+    'Forrest': {'lat': 31.1540772, 'lon': -89.2398601},
+    'Franklin': {'lat': 31.467398, 'lon': -90.8992648},
+    'George': {'lat': 30.857421, 'lon': -88.6537118},
+    'Greene': {'lat': 31.2049136, 'lon': -88.6429687},
+    'Grenada': {'lat': 33.772401, 'lon': -89.7674875},
+    'Hancock': {'lat': 30.3892456, 'lon': -89.4782116},
+    'Harrison': {'lat': 30.4553392, 'lon': -89.1313136},
+    'Hinds': {'lat': 32.2506391, 'lon': -90.4793259},
+    'Holmes': {'lat': 33.1018124, 'lon': -90.0656168},
+    'Humphreys': {'lat': 33.1282074, 'lon': -90.5408182},
+    'Issaquena': {'lat': 32.6773851, 'lon': -91.0097866},
+    'Itawamba': {'lat': 34.2774018, 'lon': -88.3713687},
+    'Jackson': {'lat': 30.4899024, 'lon': -88.6486325},
+    'Jasper': {'lat': 32.0216075, 'lon': -89.1132111},
+    'Jefferson': {'lat': 31.7256789, 'lon': -91.0335766},
+    'Jefferson Davis': {'lat': 31.5576951, 'lon': -89.8386843},
+    'Jones': {'lat': 31.6058959, 'lon': -89.1636245},
+    'Kemper': {'lat': 32.7307497, 'lon': -88.6604179},
+    'Lafayette': {'lat': 34.3519035, 'lon': -89.4664677},
+    'Lamar': {'lat': 31.2109862, 'lon': -89.5152337},
+    'Lauderdale': {'lat': 32.3905206, 'lon': -88.689636},
+    'Lawrence': {'lat': 31.5129753, 'lon': -90.1205396},
+    'Leake': {'lat': 32.7401114, 'lon': -89.5241292},
+    'Lee': {'lat': 34.265749, 'lon': -88.6913264},
+    'Leflore': {'lat': 33.5244154, 'lon': -90.288095},
+    'Lincoln': {'lat': 31.4885409, 'lon': -90.4480916},
+    'Lowndes': {'lat': 33.4466925, 'lon': -88.4108384},
+    'Madison': {'lat': 32.6308318, 'lon': -90.0040817},
+    'Marion': {'lat': 31.2247688, 'lon': -89.8217717},
+    'Marshall': {'lat': 34.7329208, 'lon': -89.4725635},
+    'Monroe': {'lat': 33.8884929, 'lon': -88.4747009},
+    'Montgomery': {'lat': 33.5074528, 'lon': -89.6182472},
+    'Neshoba': {'lat': 32.7237573, 'lon': -89.103199},
+    'Newton': {'lat': 32.3882835, 'lon': -89.1317486},
+    'Noxubee': {'lat': 33.1190254, 'lon': -88.5916703},
+    'Oktibbeha': {'lat': 33.4131096, 'lon': -88.8937318},
+    'Panola': {'lat': 34.3793392, 'lon': -89.9601925},
+    'Pearl River': {'lat': 30.7761604, 'lon': -89.5984726},
+    'Perry': {'lat': 31.153317, 'lon': -88.9830577},
+    'Pike': {'lat': 31.1712493, 'lon': -90.4093394},
+    'Pontotoc': {'lat': 34.2114655, 'lon': -89.0382651},
+    'Prentiss': {'lat': 34.6222512, 'lon': -88.5153286},
+    'Quitman': {'lat': 34.1920186, 'lon': -90.2946542},
+    'Rankin': {'lat': 32.2338702, 'lon': -89.9484651},
+    'Scott': {'lat': 32.3805744, 'lon': -89.5092509},
+    'Sharkey': {'lat': 32.8742585, 'lon': -90.8478339},
+    'Simpson': {'lat': 31.8919593, 'lon': -89.9323619},
+    'Smith': {'lat': 32.0018336, 'lon': -89.4877278},
+    'Stone': {'lat': 30.7843863, 'lon': -89.1342764},
+    'Sunflower': {'lat': 33.4980504, 'lon': -90.602067},
+    'Tallahatchie': {'lat': 33.9414425, 'lon': -90.1577411},
+    'Tate': {'lat': 34.6391136, 'lon': -89.9335244},
+    'Tippah': {'lat': 34.7296814, 'lon': -88.9119403},
+    'Tishomingo': {'lat': 34.7238634, 'lon': -88.2268403},
+    'Tunica': {'lat': 34.6398783, 'lon': -90.3623833},
+    'Union': {'lat': 34.4834555, 'lon': -88.9789198},
+    'Walthall': {'lat': 31.1241919, 'lon': -90.1197687},
+    'Warren': {'lat': 32.3649516, 'lon': -90.7975574},
+    'Washington': {'lat': 33.2626706, 'lon': -90.9183546},
+    'Wayne': {'lat': 31.6212491, 'lon': -88.6858852},
+    'Webster': {'lat': 33.6197203, 'lon': -89.2646598},
+    'Wilkinson': {'lat': 31.1371924, 'lon': -91.3329359},
+    'Winston': {'lat': 33.0603103, 'lon': -89.0495278},
+    'Yalobusha': {'lat': 34.0213455, 'lon': -89.6991703},
+    'Yazoo': {'lat': 32.770896, 'lon': -90.4120889}
+}
+        # Prepare data for visualization
+        csv_path = os.path.join(os.path.dirname(__file__), "Final_Dataset_CAPS.csv")
+        df = pd.read_csv(csv_path)
+
+        # Standardize county names
+        df["County"] = df["County"].str.replace(" County", "", regex=False)
+
+        # Aggregate data by county
+        bubble_data = df.groupby("County").size().reset_index(name="Case Count")
+
+        # Add latitude and longitude to the aggregated data
+        bubble_data["Latitude"] = bubble_data["County"].map(lambda x: county_coordinates.get(x, {}).get("lat"))
+        bubble_data["Longitude"] = bubble_data["County"].map(lambda x: county_coordinates.get(x, {}).get("lon"))
+
+        # Ensure no mising latitude or longitude values
+        bubble_data = bubble_data.dropna(subset=["Latitude", "Longitude"])
+
+        # Bubble Map Visualization
+        st.title("Bubble Map: Case Distribution Across Mississippi Counties")
+        fig = px.scatter_mapbox(
+            bubble_data,
+            lat="Latitude",
+            lon="Longitude",
+            size="Case Count",
+            color="Case Count",
+            color_continuous_scale="Viridis",
+            title="Case Distribution Across Mississippi Counties",
+            mapbox_style="carto-positron",
+            hover_data={
+        "County": True,  # Display County name
+        "Case Count": True,  # Display Case Count
+        "Latitude": True,  # Display Latitude
+        "Longitude": True  # Display Longitude
+    },
+            zoom=6,  # Adjust zoom level for Mississippi
+            center={"lat": 32.7765, "lon": -89.6678}  # Center around Mississippi
+        )
+
+
+        # Display the map
+        st.plotly_chart(fig)
+
+#         # File path for the dataset
+#         csv_path = os.path.join(os.path.dirname(__file__), "Final_Dataset_CAPS.csv")
+#         df = pd.read_csv(csv_path)
+
+#         # Ensure county names are standardized (remove " County" suffix)
+#         df["County"] = df["County"].str.replace(" County", "", regex=False)
+
+#         # Aggregate data by county
+#         bubble_data = df.groupby(["County"]).size().reset_index(name="Case Count")
+
+#         # Load Mississippi county GeoJSON
+#         geojson_url = "https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json"
+#         geojson_data = requests.get(geojson_url).json()
+
+#         # Filter GeoJSON for Mississippi counties (FIPS codes starting with 28)
+#         mississippi_geojson = {
+#             "type": "FeatureCollection",
+#             "features": [
+#                 feature for feature in geojson_data["features"] if feature["properties"]["STATE"] == "28"
+#             ]
+#         }
+
+#         # Bubble Map with Mississippi Counties
+#         fig = px.scatter_mapbox(
+#             bubble_data,
+#             geojson=mississippi_geojson,
+#             locations="County",
+#             featureidkey="properties.NAME",
+#             size="Case Count",
+#             color="Case Count",
+#             color_continuous_scale="Viridis",
+#             title="Bubble Map: Case Distribution Across Mississippi Counties",
+#             hover_name="County",
+#             mapbox_style="carto-darkmatter",  # Use Mapbox's dark theme for better contrast
+#             center={"lat": 32.7765, "lon": -89.6678},  # Center on Mississippi
+#             zoom=6,  # Adjust zoom level for Mississippi
+#         )
+
+#         # Display the map in Streamlit
+#         st.title("Bubble Map: Case Distribution in Mississippi")
+#         st.plotly_chart(fig, use_container_width=True)
+
+        # Time Series Analysis
+        st.subheader("Time Series Analysis: Number of Cases Over Time")
+
+        # Group by date and count cases
+        time_series_data = df.groupby("Date").size().reset_index(name="Case Count")
+
+        # Line chart
+        fig = px.line(
+            time_series_data,
+            x="Date",
+            y="Case Count",
+            title="Number of Cases Over Time",
+            labels={"Date": "Date", "Case Count": "Number of Cases"},
+            markers=True,
+        )
+
+        # Add rangeslider for better interactivity
+        fig.update_layout(xaxis=dict(rangeslider=dict(visible=True)))
+
+        st.plotly_chart(fig)
+
+        # Treemap: Case Severity and Abuse Type
+        st.subheader("Treemap of Severity by Abuse Type")
+
+        # Create treemap
+        fig = px.treemap(
+            df,
+            path=["Abuse Type", "Severity"],
+            values="Child ID",  # Use the Child ID as a proxy for the number of cases
+            title="Distribution of Severity Across Abuse Types",
+            color="Severity",
+            color_discrete_map={
+                "Low": "lightgreen",
+                "Medium": "orange",
+                "High": "red"
+            },
+        )
+
+        st.plotly_chart(fig)
+        
+        
+        # Heatmap of Cases by Region and Severity
+        st.subheader("Heatmap: Cases by Region and Severity")
+
+        heatmap_data = df.groupby(["Region", "Severity"]).size().reset_index(name="Case Count")
+
+        # Heatmap
+        fig = px.density_heatmap(
+            heatmap_data,
+            x="Region",
+            y="Severity",
+            z="Case Count",
+            color_continuous_scale="Viridis",
+            title="Heatmap of Cases by Region and Severity",
+            labels={"Region": "Region", "Severity": "Severity", "Case Count": "Number of Cases"}
+        )
+
+        st.plotly_chart(fig)
+
+        # Sunburst Chart
+        st.subheader("Sunburst Chart: Multi-Level Breakdown")
+
+        # Create a Sunburst chart
+        fig = px.sunburst(
+            df,
+            path=["Region", "Abuse Type", "Severity"],
+            values="Child ID",  # Use Child ID as a proxy for the number of cases
+            title="Multi-Level Breakdown of Cases",
+            color="Severity",
+            color_discrete_map={
+                "Low": "green",
+                "Medium": "orange",
+                "High": "red"
+            },
+        )
+
+        st.plotly_chart(fig)
+
+
+
+
+    
+        # 3D Scatter Plot
+        st.subheader("3D Scatter Plot: Multidimensional View")
+
+        # Aggregate data by region
+        scatter_data = df.groupby("Region").agg({"Age": "mean", "Child ID": "count", "Severity": "count"}).reset_index()
+        scatter_data.columns = ["Region", "Average Age", "Case Count", "Severity Count"]
+
+        # Create a 3D scatter plot
+        fig = px.scatter_3d(
+            scatter_data,
+            x="Average Age",
+            y="Case Count",
+            z="Severity Count",
+            color="Case Count",
+            size="Case Count",
+            hover_data=["Region"],
+            title="3D Scatter Plot of Cases",
+        )
+
+        st.plotly_chart(fig)
 
 
     # Forecasting
@@ -454,6 +1065,24 @@ def main():
             st.plotly_chart(fig)
         except Exception as e:
             st.error(f"Error generating forecast: {e}")
+    # Similar Cases Page
+    elif page == "Similar Case Discovery":
+        st.title("Find Cases with Similar Patterns")
+        case_description = st.text_area("Enter a case description to find similar cases:")
+        if st.button("Find Similar Cases"):
+            if case_description.strip():
+                similar_cases = find_similar_cases(case_description, df)
+                st.subheader("Top Similar Cases")
+                st.dataframe(similar_cases)
+            else:
+                st.warning("Please enter a case description.")
+
+         
+
+            
+
+
+
 
 
 if __name__ == "__main__":
