@@ -97,7 +97,7 @@ def load_data():
     try:
         # Dynamically construct the dataset path
         current_dir = os.path.dirname(os.path.abspath(__file__))
-        csv_path = os.path.join(current_dir, "Final_Dataset_CAPS.csv")
+        csv_path = os.path.join(current_dir,"data", "Final_Dataset_CAPS.csv")
         df = pd.read_csv(csv_path)
         df['Date'] = pd.to_datetime(df['Date'])  # Ensure Date is in datetime format
 
@@ -796,7 +796,9 @@ def main():
     'Yazoo': {'lat': 32.770896, 'lon': -90.4120889}
 }
         # Prepare data for visualization
-        csv_path = os.path.join(os.path.dirname(__file__), "Final_Dataset_CAPS.csv")
+        #csv_path = os.path.join(os.path.dirname(__file__), "Final_Dataset_CAPS.csv")
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        csv_path = os.path.join(current_dir,"data", "Final_Dataset_CAPS.csv")
         df = pd.read_csv(csv_path)
 
         # Standardize county names
