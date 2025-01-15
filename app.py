@@ -371,9 +371,8 @@ def main():
                     df.loc[df["Child ID"].astype(str) == case_id_to_edit, "Assigned Investigator"] = new_investigator
                     try:
 #                         csv_path = "Final_Dataset_CAPS.csv"
-                     
-
-                        csv_path = os.path.join(os.path.dirname(__file__), "Final_Dataset.csv")
+                        current_dir = os.path.dirname(os.path.abspath(__file__))
+                        csv_path = os.path.join(current_dir, "data", "Final_Dataset.csv")
                         df.to_csv(csv_path, index=False)
                         load_data.clear()
                         df = load_data()
