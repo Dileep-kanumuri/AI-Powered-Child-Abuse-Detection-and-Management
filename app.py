@@ -99,6 +99,7 @@ def load_data():
         current_dir = os.path.dirname(os.path.abspath(__file__))
         csv_path = os.path.join(current_dir,"data", "Final_Dataset.csv")
         df = pd.read_csv(csv_path)
+        st.write(f"Loading dataset from: {csv_path}")
         df['Date'] = pd.to_datetime(df['Date'])  # Ensure Date is in datetime format
 
         # Adding default columns if missing
