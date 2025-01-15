@@ -105,9 +105,9 @@ def load_data():
         required_columns = {
             "Case Outcome": "Ongoing",
             "Notes": "",
-#             "Confidence Score": 0.0,
+
             "Flagged": False,
-#             "Case Status": "Ongoing",
+
             "Assigned Investigator": "Unassigned",
         }
 
