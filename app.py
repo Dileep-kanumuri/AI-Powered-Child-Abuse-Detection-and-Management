@@ -295,8 +295,8 @@ def main():
                 st.dataframe(flagged_cases)
 
                 # Save the updated DataFrame
-#                 csv_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),  "Final_Dataset_CAPS.csv")
-                csv_path = os.path.join(os.getcwd(), "Final_Dataset.csv")
+                current_dir = os.path.dirname(os.path.abspath(__file__))
+                csv_path = os.path.join(current_dir, "data", "Final_Dataset.csv")
                 df.to_csv(csv_path, index=False)
                 st.success("Updated flagged cases have been saved.")
             except Exception as e:
