@@ -251,7 +251,7 @@ def main():
 
     # Sidebar Navigation
     st.sidebar.title("Navigation")
-    page = st.sidebar.radio("Go to:", ["Home", "Predict Abuse Type", "Auto-Flagging system", "Similar Case Discovery","Case Management", "Visualizations", "Forecasting"]
+    page = st.sidebar.radio("Go to:", ["Home", "Predict Abuse Type", "Auto-Flagging System", "Similar Case Discovery","Case Management", "Visualizations", "Forecasting"]
     )
 
     # Home Page
