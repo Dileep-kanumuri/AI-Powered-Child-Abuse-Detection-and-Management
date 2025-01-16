@@ -187,8 +187,8 @@ def predict_abuse_type(text, classifier):
     label_mapping = {
         "LABEL_0": "Emotional",
         "LABEL_1": "Neglect",
-        "LABEL_2": "Physical",
-        "LABEL_3": "Sexual",
+        "LABEL_2": "sexual",
+        "LABEL_3": "physical",
         "LABEL_4": "Other",
     }
     top_label = label_mapping.get(sorted_outputs[0]["label"], "Unknown")
