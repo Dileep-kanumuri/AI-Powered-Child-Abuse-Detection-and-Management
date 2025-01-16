@@ -1,80 +1,112 @@
-
 # **AI-Powered Child Abuse Detection and Management**
 ### **By SAI Pro Systems LLC**
-
-![Project Screenshot](https://path-to-your-screenshot.png)
 
 ---
 
 ## **Overview**
-"AI-Powered Child Abuse Detection and Management" is a Streamlit-based application designed to analyze and manage child abuse cases using advanced machine learning techniques. This tool leverages natural language processing (NLP) powered by a pre-trained BERT model for abuse type prediction and employs data visualization and forecasting to assist investigators, social workers, and administrators in their decision-making process.
+The **AI-Powered Child Abuse Detection and Management** project leverages artificial intelligence and natural language processing (NLP) to analyze and manage child abuse cases. Built using Streamlit, this prototype demonstrates how advanced machine learning models like BERT can be utilized for abuse detection, case management, and predictive analytics. The project is open-source and deployed for public exploration and experimentation.
 
-> **Note**: All data used in this project is **synthetically generated** and does not represent real-world cases. This application is for **educational and research purposes only**.
+> **Note**: All data used is **synthetically generated** for demonstration purposes. This application is for **educational and research purposes only** and does not contain real-world child welfare data.
 
 ---
 
 ## **Features**
-- **Home Page**: Search and filter case data using various attributes (e.g., `Child ID`, `Region`, `Abuse Type`).
-- **Predict Abuse Type**: Use the BERT model to predict abuse types (e.g., `Neglect`, `Physical`, `Emotional`) and get confidence scores based on case descriptions.
-- **Auto-Flagging Logic**: Automatically flag cases based on severity and confidence scores for quicker intervention.
-- **Case Management**: View, edit, and update case details (e.g., `Case Outcome`, `Notes`, `Assigned Investigator`).
-- **Visualizations**: Explore interactive charts, including heatmaps, bar charts, and pie charts, for insights into abuse cases.
-- **Forecasting**: Predict future trends in child abuse cases using Prophet forecasting models.
-- **Professional UI**: Modern dark-themed interface with vibrant orange accents for an intuitive user experience.
+- **Home Page**: Search and filter child welfare case data by attributes like Child ID, Region, and Abuse Type.
+- **Abuse Type Prediction**: Predicts abuse types (e.g., Neglect, Physical, Emotional) using a fine-tuned BERT model.
+- **Auto-Flagging System**: Flags high-risk cases based on severity and confidence thresholds for faster interventions.
+- **Similar Case Discovery**: Finds the hight priority cases with same patterns and displays the top 5 cases .
+- **Case Management**: Update and manage case details such as status, assigned investigator, and notes.
+- **Visualizations**: Interactive charts, including heatmaps, bar charts, pie charts, and sunburst diagrams.
+- **Forecasting**: Predicts future trends in child abuse case reporting to aid planning and resource allocation.
+
+---
+
+## **Explore the Project**
+This project is open for exploration and contribution. Access it here:
+
+- **GitHub Repository**: [AI-Powered Child Abuse Detection and Management](https://github.com/Dileep-kanumuri/AI-Powered-Child-Abuse-Detection-and-Management)
+- **Streamlit Application**: [AI-Powered Application Deployment](https://ai-powered-child-abuse-detection.streamlit.app/)
+
+We encourage you to experiment with the app, provide feedback, and contribute enhancements to foster collaboration and innovation in addressing child abuse through AI-powered solutions.
 
 ---
 
 ## **Technology Stack**
-- **Frontend**: [Streamlit](https://streamlit.io/) (Interactive web interface)
+- **Frontend**: [Streamlit](https://streamlit.io/)
 - **Backend**: Python
-- **Machine Learning**: BERT (pre-trained NLP model from Hugging Face's Transformers library)
+- **Machine Learning**: BERT (via Hugging Face Transformers)
 - **Visualization**: Plotly
-- **Forecasting**: Prophet (Time-series forecasting)
+- **Forecasting**: Prophet
 
 ---
 
-## **Dataset**
-The dataset used in this project is synthetically generated and contains the following columns:
-- `Child ID`
-- `Age`
-- `Gender`
-- `Region`
-- `Abuse Type`
-- `Severity`
-- `Reported By`
-- `Support Provided`
-- `Case Outcome`
-- `Case Status`
-- `Assigned Investigator`
-- `Notes`
-- `Date`
+## **How to Use**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Dileep-kanumuri/AI-Powered-Child-Abuse-Detection-and-Management.git
+   cd AI-Powered-Child-Abuse-Detection-and-Management
 
-**Disclaimer**: The dataset is entirely synthetic and has been created solely for the purpose of demonstrating the capabilities of this application. It does not contain any real-world data or sensitive information.
+1.  Install dependencies:
 
----
+    bash
 
-## **Project Structure**
-```plaintext
-Child_Abuse/
+    CopyEdit
+
+    `pip install -r requirements.txt`
+
+2.  Run the Streamlit application:
+
+    bash
+
+    CopyEdit
+
+    `streamlit run app.py`
+
+3.  Access the application in your browser and explore its features.
+
+* * * * *
+
+**Project Structure**
+---------------------
+
+plaintext
+
+CopyEdit
+
+`AI-Powered-Child-Abuse-Detection-and-Management/
 │
 ├── app.py                         # Main Streamlit application
-├── bert_model.py                  # Code for training the BERT model
+├── bert_model.py                  # Abuse type classification model
 ├── requirements.txt               # Python dependencies
-├── data/                          # Folder containing datasets
-│   ├── Final_Dataset_CAPS.csv     # Main dataset
-│   ├── synthetic_child_abuse_dataset.csv
+├── data/                          # Dataset folder
+│   ├── Final_Data.csv
 │   ├── updated_synthetic_child_abuse_dataset.csv
-├── bert_abuse_model_v2/           # Pre-trained BERT model files
-│   ├── config.json
-│   ├── pytorch_model.bin
-|   ├── model.safetensors
-│   ├── tokenizer_config.json
-│   ├── vocab.txt
+├── bert_abuse_model/              # Pre-trained BERT model files
 ├── README.md                      # Project documentation
-└── venv/                          # Python virtual environment (optional)
-=======
-# AI-Powered-Child-Abuse-Detection-and-Management
-AI-Powered Child Abuse Detection and Management" is a cutting-edge application developed by SAI Pro Systems LLC that leverages machine learning and natural language processing (NLP) to analyze, predict, and manage child abuse cases.
+└── venv/                          # Python virtual environment (optional)`
+
+* * * * *
+
+**Disclaimer**
+--------------
+
+This project is a prototype using synthetic data to simulate real-world scenarios. All examples, visuals, and metrics are derived from artificial datasets for educational purposes only.
+
+* * * * *
+
+**Contributing**
+----------------
+
+We welcome contributions to improve this project. Feel free to submit a pull request or report an issue via GitHub.
+
+* * * * *
+
+**License**
+-----------
+
+This project is licensed under the MIT License.
 
 
+CopyEdit
 
+ `You can copy and paste this into your `README.md` file directly. Let me know if you need any further adjustments!`
