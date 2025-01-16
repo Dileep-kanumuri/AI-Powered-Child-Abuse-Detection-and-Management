@@ -399,64 +399,64 @@ def main():
         st.title("Data Visualizations")
         st.write("Explore insights based on the dataset.")
 
-        # Visualization 1: Cases by Region
-        st.subheader("Cases by Region")
-        abuse_type_filter = st.selectbox("Filter by Abuse Type:", df["Abuse Type"].unique())
-        filtered_data = df[df["Abuse Type"] == abuse_type_filter]
-        fig1 = px.bar(
-            filtered_data,
-            x="Region",
-            color="Severity",
-            title=f"Cases by Region for {abuse_type_filter}",
-            labels={"Region": "Region", "count": "Number of Cases"},
-        )
-        st.plotly_chart(fig1)
+        # # Visualization 1: Cases by Region
+        # st.subheader("Cases by Region")
+        # abuse_type_filter = st.selectbox("Filter by Abuse Type:", df["Abuse Type"].unique())
+        # filtered_data = df[df["Abuse Type"] == abuse_type_filter]
+        # fig1 = px.bar(
+        #     filtered_data,
+        #     x="Region",
+        #     color="Severity",
+        #     title=f"Cases by Region for {abuse_type_filter}",
+        #     labels={"Region": "Region", "count": "Number of Cases"},
+        # )
+        # st.plotly_chart(fig1)
 
         # Visualization 2: Abuse Type and Severity Heatmap
-        st.subheader("Abuse Type and Severity Heatmap")
-        heatmap_data = df.groupby(["Abuse Type", "Severity"]).size().reset_index(name="Count")
-        heatmap_fig = px.density_heatmap(
-            heatmap_data,
-            x="Abuse Type",
-            y="Severity",
-            z="Count",
-            color_continuous_scale="Viridis",
-            title="Abuse Type and Severity Distribution",
-        )
-        st.plotly_chart(heatmap_fig)
+        # st.subheader("Abuse Type and Severity Heatmap")
+        # heatmap_data = df.groupby(["Abuse Type", "Severity"]).size().reset_index(name="Count")
+        # heatmap_fig = px.density_heatmap(
+        #     heatmap_data,
+        #     x="Abuse Type",
+        #     y="Severity",
+        #     z="Count",
+        #     color_continuous_scale="Viridis",
+        #     title="Abuse Type and Severity Distribution",
+        # )
+        # st.plotly_chart(heatmap_fig)
 
-        # Visualization 3: Severity Distribution
-        st.subheader("Severity Distribution")
-        severity_counts = df["Severity"].value_counts()
-        fig3 = px.pie(
-            values=severity_counts.values,
-            names=severity_counts.index,
-            title="Severity Distribution",
-        )
-        st.plotly_chart(fig3)
+        # # Visualization 3: Severity Distribution
+        # st.subheader("Severity Distribution")
+        # severity_counts = df["Severity"].value_counts()
+        # fig3 = px.pie(
+        #     values=severity_counts.values,
+        #     names=severity_counts.index,
+        #     title="Severity Distribution",
+        # )
+        # st.plotly_chart(fig3)
         
-        # Visualization 3: Sankey Diagram
-        st.subheader("Case Flow Visualization (Region → Severity → Outcome)")
-        sankey_data = df.groupby(["Region", "Severity", "Case Outcome"]).size().reset_index(name="Count")
+        # # Visualization 3: Sankey Diagram
+        # st.subheader("Case Flow Visualization (Region → Severity → Outcome)")
+        # sankey_data = df.groupby(["Region", "Severity", "Case Outcome"]).size().reset_index(name="Count")
 
-        fig3 = go.Figure(
-            go.Sankey(
-                node=dict(
-                    pad=10,
-                    thickness=20,
-                    line=dict(color="black", width=0.5),
-                    label=list(set(sankey_data["Region"]) | set(sankey_data["Severity"]) | set(sankey_data["Case Outcome"])),
-                ),
-                link=dict(
-                    source=sankey_data["Region"].apply(lambda x: list(sankey_data["Region"]).index(x)),
-                    target=sankey_data["Severity"].apply(lambda x: list(sankey_data["Severity"]).index(x) + len(set(sankey_data["Region"]))),
-                    value=sankey_data["Count"]
-                )
-            )
-        )
+        # fig3 = go.Figure(
+        #     go.Sankey(
+        #         node=dict(
+        #             pad=10,
+        #             thickness=20,
+        #             line=dict(color="black", width=0.5),
+        #             label=list(set(sankey_data["Region"]) | set(sankey_data["Severity"]) | set(sankey_data["Case Outcome"])),
+        #         ),
+        #         link=dict(
+        #             source=sankey_data["Region"].apply(lambda x: list(sankey_data["Region"]).index(x)),
+        #             target=sankey_data["Severity"].apply(lambda x: list(sankey_data["Severity"]).index(x) + len(set(sankey_data["Region"]))),
+        #             value=sankey_data["Count"]
+        #         )
+        #     )
+        # )
 
-        fig3.update_layout(title_text="Flow of Cases (Region → Severity → Outcome)", font_size=10)
-        st.plotly_chart(fig3)
+        # fig3.update_layout(title_text="Flow of Cases (Region → Severity → Outcome)", font_size=10)
+        # st.plotly_chart(fig3)
         
 
 
@@ -902,6 +902,63 @@ def main():
 
         # st.plotly_chart(fig)
 
+                # Visualization 3: Sankey Diagram
+        st.subheader("Case Flow Visualization (Region → Severity → Outcome)")
+        sankey_data = df.groupby(["Region", "Severity", "Case Outcome"]).size().reset_index(name="Count")
+
+        fig3 = go.Figure(
+            go.Sankey(
+                node=dict(
+                    pad=10,
+                    thickness=20,
+                    line=dict(color="black", width=0.5),
+                    label=list(set(sankey_data["Region"]) | set(sankey_data["Severity"]) | set(sankey_data["Case Outcome"])),
+                ),
+                link=dict(
+                    source=sankey_data["Region"].apply(lambda x: list(sankey_data["Region"]).index(x)),
+                    target=sankey_data["Severity"].apply(lambda x: list(sankey_data["Severity"]).index(x) + len(set(sankey_data["Region"]))),
+                    value=sankey_data["Count"]
+                )
+            )
+        )
+
+        fig3.update_layout(title_text="Flow of Cases (Region → Severity → Outcome)", font_size=10)
+        st.plotly_chart(fig3)
+
+
+                st.subheader("Abuse Type and Severity Heatmap")
+        heatmap_data = df.groupby(["Abuse Type", "Severity"]).size().reset_index(name="Count")
+        heatmap_fig = px.density_heatmap(
+            heatmap_data,
+            x="Abuse Type",
+            y="Severity",
+            z="Count",
+            color_continuous_scale="Viridis",
+            title="Abuse Type and Severity Distribution",
+        )
+        st.plotly_chart(heatmap_fig)
+
+        # Visualization 3: Severity Distribution
+        st.subheader("Severity Distribution")
+        severity_counts = df["Severity"].value_counts()
+        fig3 = px.pie(
+            values=severity_counts.values,
+            names=severity_counts.index,
+            title="Severity Distribution",
+        )
+        st.plotly_chart(fig3)
+        # Visualization 1: Cases by Region
+        st.subheader("Cases by Region")
+        abuse_type_filter = st.selectbox("Filter by Abuse Type:", df["Abuse Type"].unique())
+        filtered_data = df[df["Abuse Type"] == abuse_type_filter]
+        fig1 = px.bar(
+            filtered_data,
+            x="Region",
+            color="Severity",
+            title=f"Cases by Region for {abuse_type_filter}",
+            labels={"Region": "Region", "count": "Number of Cases"},
+        )
+        st.plotly_chart(fig1)
         # Treemap: Case Severity and Abuse Type
         st.subheader("Treemap of Severity by Abuse Type")
 
