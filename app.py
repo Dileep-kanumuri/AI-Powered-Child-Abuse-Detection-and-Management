@@ -881,26 +881,26 @@ def main():
 #         st.title("Bubble Map: Case Distribution in Mississippi")
 #         st.plotly_chart(fig, use_container_width=True)
 
-        # Time Series Analysis
-        st.subheader("Time Series Analysis: Number of Cases Over Time")
+        # # Time Series Analysis
+        # st.subheader("Time Series Analysis: Number of Cases Over Time")
 
-        # Group by date and count cases
-        time_series_data = df.groupby("Date").size().reset_index(name="Case Count")
+        # # Group by date and count cases
+        # time_series_data = df.groupby("Date").size().reset_index(name="Case Count")
 
-        # Line chart
-        fig = px.line(
-            time_series_data,
-            x="Date",
-            y="Case Count",
-            title="Number of Cases Over Time",
-            labels={"Date": "Date", "Case Count": "Number of Cases"},
-            markers=True,
-        )
+        # # Line chart
+        # fig = px.line(
+        #     time_series_data,
+        #     x="Date",
+        #     y="Case Count",
+        #     title="Number of Cases Over Time",
+        #     labels={"Date": "Date", "Case Count": "Number of Cases"},
+        #     markers=True,
+        # )
 
-        # Add rangeslider for better interactivity
-        fig.update_layout(xaxis=dict(rangeslider=dict(visible=True)))
+        # # Add rangeslider for better interactivity
+        # fig.update_layout(xaxis=dict(rangeslider=dict(visible=True)))
 
-        st.plotly_chart(fig)
+        # st.plotly_chart(fig)
 
         # Treemap: Case Severity and Abuse Type
         st.subheader("Treemap of Severity by Abuse Type")
