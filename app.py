@@ -922,23 +922,23 @@ def main():
         st.plotly_chart(fig)
         
         
-        # Heatmap of Cases by Region and Severity
-        st.subheader("Heatmap: Cases by Region and Severity")
+        # # Heatmap of Cases by Region and Severity
+        # st.subheader("Heatmap: Cases by Region and Severity")
 
-        heatmap_data = df.groupby(["Region", "Severity"]).size().reset_index(name="Case Count")
+        # heatmap_data = df.groupby(["Region", "Severity"]).size().reset_index(name="Case Count")
 
-        # Heatmap
-        fig = px.density_heatmap(
-            heatmap_data,
-            x="Region",
-            y="Severity",
-            z="Case Count",
-            color_continuous_scale="Viridis",
-            title="Heatmap of Cases by Region and Severity",
-            labels={"Region": "Region", "Severity": "Severity", "Case Count": "Number of Cases"}
-        )
+        # # Heatmap
+        # fig = px.density_heatmap(
+        #     heatmap_data,
+        #     x="Region",
+        #     y="Severity",
+        #     z="Case Count",
+        #     color_continuous_scale="Viridis",
+        #     title="Heatmap of Cases by Region and Severity",
+        #     labels={"Region": "Region", "Severity": "Severity", "Case Count": "Number of Cases"}
+        # )
 
-        st.plotly_chart(fig)
+        # st.plotly_chart(fig)
 
         # Sunburst Chart
         st.subheader("Sunburst Chart: Multi-Level Breakdown")
