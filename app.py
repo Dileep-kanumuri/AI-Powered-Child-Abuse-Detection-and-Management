@@ -926,7 +926,7 @@ def main():
         st.plotly_chart(fig3)
 
 
-                st.subheader("Abuse Type and Severity Heatmap")
+        st.subheader("Abuse Type and Severity Heatmap")
         heatmap_data = df.groupby(["Abuse Type", "Severity"]).size().reset_index(name="Count")
         heatmap_fig = px.density_heatmap(
             heatmap_data,
