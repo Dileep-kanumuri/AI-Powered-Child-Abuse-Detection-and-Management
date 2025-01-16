@@ -195,7 +195,7 @@ def predict_abuse_type(text, classifier):
     top_confidence = float(sorted_outputs[0]["score"])
     return top_label, top_confidence
 
-def auto_flag_logic(df, classifier):
+def auto_flag_system(df, classifier):
     # Ensure the "Flagged" column exists
     if "Flagged" not in df.columns:
         df["Flagged"] = False  # Default all cases to not flagged
@@ -251,7 +251,7 @@ def main():
 
     # Sidebar Navigation
     st.sidebar.title("Navigation")
-    page = st.sidebar.radio("Go to:", ["Home", "Predict Abuse Type", "Auto-Flagging Logic", "Similar Case Discovery","Case Management", "Visualizations", "Forecasting"]
+    page = st.sidebar.radio("Go to:", ["Home", "Predict Abuse Type", "Auto-Flagging system", "Similar Case Discovery","Case Management", "Visualizations", "Forecasting"]
     )
 
     # Home Page
@@ -282,15 +282,15 @@ def main():
                 st.warning("Please enter a case description.")
 
     # Auto-Flagging Logic
-    elif page == "Auto-Flagging Logic":
-        st.title("Auto-Flagging Logic")
+    elif page == "Auto-Flagging System":
+        st.title("Auto-Flagging System")
         st.write("Automatically flag the cases based on prediction confidence and severity criteria.")
 
         if st.button("Auto-Flag the cases"):
-            st.write("Running auto-flagging logic... Please wait.")
+            st.write("Running auto-flagging system... Please wait.")
             try:
-                df = auto_flag_logic(df, classifier)
-                st.success("Auto-flagging logic applied successfully!")
+                df = auto_flag_system(df, classifier)
+                st.success("Auto-flagging System applied successfully!")
                 flagged_cases = df[df["Flagged"] == True]
                 st.subheader(f"Flagged Cases ({len(flagged_cases)}):")
                 st.dataframe(flagged_cases)
