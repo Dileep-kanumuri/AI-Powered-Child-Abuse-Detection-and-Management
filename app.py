@@ -815,7 +815,7 @@ def main():
         bubble_data = bubble_data.dropna(subset=["Latitude", "Longitude"])
 
         # Bubble Map Visualization
-        st.title("Bubble Map: Case Distribution Across Mississippi Counties")
+        st.subheader("Bubble Map: Case Distribution Across Mississippi Counties")
         fig = px.scatter_mapbox(
             bubble_data,
             lat="Latitude",
