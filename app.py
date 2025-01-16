@@ -191,7 +191,7 @@ def predict_abuse_type(text, classifier):
         "LABEL_3": "physical",
         "LABEL_4": "sexual",
     }
-    top_label = label_mapping.get(sorted_outputs[0]["label"], "Unknown")
+    top_label = label_mapping.get(sorted_outputs[0]["label"], "other abuse")
     top_confidence = float(sorted_outputs[0]["score"])
     return top_label, top_confidence
 
