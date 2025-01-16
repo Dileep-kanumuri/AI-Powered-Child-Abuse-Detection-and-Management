@@ -287,7 +287,7 @@ def main():
         st.write("Automatically flag the cases based on prediction confidence and severity criteria.")
 
         if st.button("Auto-Flag the cases"):
-            st.write("Running auto-flagging system... Please wait.")
+            st.write("Running auto-flagging System... Please wait.")
             try:
                 df = auto_flag_system(df, classifier)
                 st.success("Auto-flagging System applied successfully!")
