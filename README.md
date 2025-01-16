@@ -69,11 +69,8 @@ We encourage you to experiment with the app, provide feedback, and contribute en
 **Project Structure**
 ---------------------
 
-plaintext
 
-CopyEdit
-
-`AI-Powered-Child-Abuse-Detection-and-Management/
+AI-Powered-Child-Abuse-Detection-and-Management/
 │
 ├── app.py                         # Main Streamlit application
 ├── bert_model.py                  # Abuse type classification model
