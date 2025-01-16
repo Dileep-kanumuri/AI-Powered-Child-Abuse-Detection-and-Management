@@ -441,7 +441,7 @@ def main():
             title="Case Distribution Across Mississippi Counties",
             mapbox_style="carto-positron",
             hover_data={
-        "County": True,  e
+        "County": True,  
         "Case Count": True,  
         "Latitude": True,  
         "Longitude": True  
