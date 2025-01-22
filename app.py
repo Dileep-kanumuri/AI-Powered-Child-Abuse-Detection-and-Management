@@ -235,7 +235,7 @@ def main():
 
     # Title Section
     st.markdown("<div class='title-container'>AI-Powered Child Abuse Detection and Management</div>", unsafe_allow_html=True)
-    st.markdown("<div class='subtitle-container'>By SAI Pro Systems LLC</div>", unsafe_allow_html=True)
+    st.markdown("<div class='subtitle-container'>By Saipro Systems LLC</div>", unsafe_allow_html=True)
 
     # Sidebar Navigation
     st.sidebar.title("Navigation")
